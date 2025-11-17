@@ -1,6 +1,6 @@
 ---
 title: "_Tayassu_pecari_"
-subtitle: "Pecari de labio blanco. Cafuche"
+subtitle: "Pecari de labio blanco, Cafuche"
 date: 11/10/2025
 author: Olga Montenegro
 format: html
@@ -37,7 +37,7 @@ value_box(
   title = NULL,
   value = "EN A2 acde",
   # showcase = bs_icon("music-note-beamed"),
-  theme = "Danger",
+  theme = value_box_theme(bg = "#f28630"),
   max_height="100px"
 )
 
@@ -109,10 +109,11 @@ Javier Colmenares, Laura Vargas, Miguel Rodríguez, Jairo Peréz Torres, Felipe 
 
 
 
-En este estudio @Sánchez-L_Link_McGovern_Marin_2025 describen nuevos registros de distribución.
+En este estudio @Sanchez-L2025 describen nuevos registros de distribución.
 
 
-## References
+## Bibliografía citada
+
 
 ::: {#refs}
 :::

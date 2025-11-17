@@ -104,7 +104,7 @@ José F. González-Maya, Sebastían Mejia, Andrés Arias-Alzate, Diego Gutierrez
 
 En este estudio @Valencia-Berrio2025 muestran algunos datos ecológicos.
 
-## References
+## Bibliografía citada
 
 ::: {#refs}
 :::

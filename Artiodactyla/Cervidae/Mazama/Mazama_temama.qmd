@@ -37,7 +37,7 @@ value_box(
   title = NULL,
   value = "DD",
   # showcase = bs_icon("music-note-beamed"),
-  theme = "Secondary",
+  theme = value_box_theme(bg = "#e6f2fd"),
   max_height="100px"
 )
 
@@ -107,7 +107,7 @@ Andrés Arias-Alzate, Diego Gutierrez, Héctor Ramirez-Chaves, Sebastían Mejia,
 
 En este estudio @Ramírez2021 muestran algunos datos de distribución.
 
-## References
+## Bibliografía citada 
 
 ::: {#refs}
 :::

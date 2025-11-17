@@ -104,7 +104,7 @@ Héctor Ramirez, Mauricio Barbanti, Diego Gutierrez, José F. González-Maya, Bi
 
 En este estudio @Lizcano2021 muestran algunos datos ecológicos.
 
-## References
+## Bibliografía citada 
 
 ::: {#refs}
 :::

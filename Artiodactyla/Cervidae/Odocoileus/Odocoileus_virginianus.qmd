@@ -34,7 +34,7 @@ value_box(
   title = NULL,
   value = "DD",
   # showcase = bs_icon("music-note-beamed"),
-  theme = "secondary",
+  theme = value_box_theme(bg = "#e6f2fd"),
   max_height="100px"
 )
 
@@ -101,7 +101,7 @@ Hugo López, José F. González-Maya, Hector Ramirez, Andrés Arias-Alzate, Olga
 
 En este estudio @Carrillo-Villamizar2024 muestran datos ecológicos y poblacionales.
 
-## References
+## Bibliografía citada
 
 ::: {#refs}
 :::

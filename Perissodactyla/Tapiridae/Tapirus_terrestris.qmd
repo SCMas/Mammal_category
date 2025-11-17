@@ -1,0 +1,119 @@
+---
+title: "_Tapirus terrestris_"
+subtitle: "Danta de tierras bajas, Danta comun"
+date: 11/10/2025
+author: Olga Montenegro
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "VU A4cd",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = "yellow",
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+![_Tapirus terrestris_ Danta en Manacacias, Meta, Colombia (Foto: Diego J. Lizcano](/img/sp/Tapirus_terrestris.jpg)
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Tapirus terrestris")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        year,
+                                        recordedBy) |> 
+   filter(recordedBy!="NA") |> 
+   filter(recordedBy!="Sebastian Arcila Angel") |> 
+   filter(recordedBy!="Zoológico de Cali") |> 
+   filter(recordedBy!="santiagoz") |> 
+   filter(recordedBy!="Carlos Andrés Galvis")
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+
+```
+
+
+## Justificación 
+
+Especie de amplia distribución en Colombia, existen areas donde han ocurrido reducciones poblaciones locales como en el Caquetá y cerca al PNN Chiribiquete, por presión de deforestación. Hay una mayor tasa de deforestación  en la Orinoquía, Amazonía, oeste de los Andes y región Caribe. No cumple con los criterios para clasificarlo en alguna categoria de amenaza, hay zonas puntuales para estar atentos a ciertas poblaciones. Tiene amenazas por pérdida de calidad y cantidad de hábitat y caceria, cultivos de arroz y palma de cera,  esto lleva a una reducción poblacional mayor o igual al 30% con una ventana movil al pasado de 20 años y de 10 años al futuro.
+
+
+
+
+
+## Evaluadores:
+
+Sergio Escobar Lasso, Olga Montenegro, Sebastian Mejia, Diego Gutierrez, José González-Maya, José González-Maya, Diego J. Lizcano, Sergio Escobar Lasso, Andrés Arias-Alzate, Angela Alviz, Diego Gutierrez, Cristian Rodríguez, Bibiana Gómez, Tania Marisol González, Federico Mosquera, Juliana Velez.
+
+
+
+En este estudio @Arias-Alzate2020 muestran algunos datos de distribución.
+
+## Bibliografía citada
+
+::: {#refs}
+:::

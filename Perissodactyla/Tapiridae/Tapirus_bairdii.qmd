@@ -1,0 +1,113 @@
+---
+title: "_Tapirus bairdii_"
+subtitle: "Tapir Centroamericano, Tapir de Baird"
+date: 11/10/2025
+author: José F. González-Maya
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "EN A2cd+B1ab (i,ii,iii)+B2ab (i, ii, iii)",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = "orange",
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+![_Tapirus bairdii_ Baird's Tapir at the Franklin Park Zoo in Boston, Massachusetts (Foto: Sasha Kopf)](/img/sp/Tapirus_bairdii.jpg)
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Tapirus bairdii")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        year,
+                                        recordedBy) |> 
+   filter(recordedBy!="NA") |> 
+   filter(recordedBy!="Cuesta R.E.|Moya R.J.")
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+
+```
+
+
+## Justificación 
+
+Se estima que la especie presenta una reducción de la población entre el 50 y 80% en 33 años (23 años en el pasado y 10 hacia el futuro), es decir, en tres generaciones. Su área de extensión de presencia es menor a 5000 km2, con pérdida en la calidad y cantidad del hábitat, además de sobreexplotación por cacería. Se reporta como presente en el extremo norte de la región Pacífico, en el Parque Nacional Natural Los Katíos, Serranía del Darién y en las inmediaciones del Golfo de Urabá. Se sospecha que presenta extinción local al sur de la región Pacífico, así como en la cordillera oriental. 
+
+
+
+## Evaluadores:
+
+Olga Montenegro, José F. González-Maya, Sergio Escobar-Lasso, Andrés Arias-Alzate, Sebastian Mejía, Diego J. Lizcano, Diego Gutierrez, Maria Piedad Baptiste E., Laura Nova-León, Lina M. García-Loaiza, Hector Manuel Arango, Cristian Cruz, Angélica Díaz, Bibiana Gómez, Elkin Noguera, Mónica Peñuela, Catalina Sánchez-Lalinde, Gabriel Pantoja, Lain E.Pardo
+
+
+En este estudio @Mejia2014 muestran algunos datos ecológicos.
+
+## Bibliografía citada
+
+::: {#refs}
+:::

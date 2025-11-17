@@ -1,0 +1,115 @@
+---
+title: "_Tapirus pinchaque_"
+subtitle: "Danta de Montaña, Tapir Andino"
+date: 11/10/2025
+author: Diego Lizcano
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "EN A4cd",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = "orange",
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+![_Tapirus pinchaque_ Danta de montaña en PNN los Nevados (Foto: Diego J. Lizcano)](/img/sp/Tapirus_pinchaque.jpg)
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Tapirus pinchaque")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        year,
+                                        recordedBy) |> 
+   filter(recordedBy!="NA") #|> 
+   #filter(recordedBy!="Cuesta R.E.|Moya R.J.")
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+
+```
+
+
+## Justificación 
+
+Se estima que la especie ha reducido su población en un 50 % en los anteriores 23 años y se proyecta una pérdida continua para los próximos 10 años, es decir, en tres generaciones. Aunque se considera que presenta amplia distribución en Colombia, con concentración en los relictos de bosque que permanecen en las zonas de bosque alto andino, existen áreas donde han ocurrido reducciones poblaciones locales como en Antioquia y el PNN Sumapaz, por presión de deforestación. En particular, se reconocen amenazas por sobreexplotación (cacería), fragmentación y pérdida de calidad y cantidad de hábitat por la expansión de la frontera agrícola y cultivos ilícitos de amapola.
+
+
+
+
+## Evaluadores:
+
+Sebastián Mejía, Héctor Ramírez, Olga Montenegro, José González-Maya, Diego Lizcano, Sergio Escobar Lasso, Andrés Arias-Alzate, Angela Alviz, Diego Gutierrez, Cristian Rodríguez, Bibiana Gómez, Tania Marisol González, Federico Mosquera, Juan Camilo Cepeda Duque, Juliana Velez.
+
+
+
+En este estudio @Cepeda-Duque2025 muestran algunos datos ecológicos.
+
+## Bibliografía citada
+
+::: {#refs}
+:::

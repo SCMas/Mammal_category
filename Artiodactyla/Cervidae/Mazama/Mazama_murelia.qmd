@@ -104,7 +104,7 @@ Diego R. Gutierrez, José F. González-Maya, Bibiana Gómez-Valencia, Tania Mari
 
 
 
-## References
+## Bibliografía citada 
 
 ::: {#refs}
 :::
