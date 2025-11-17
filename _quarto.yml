@@ -1,0 +1,77 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  google-analytics:
+    tracking-id: "G-2XMZ0PKMPK" # Replace with your own actual GA4 tracking ID
+    anonymize-ip: true
+  favicon: favicon.png
+  description: "mamíferos | Colombia | Lista roja de mamíferos | mamíferos amenazados | mammal red list"
+  cookie-consent: false
+  twitter-card: true
+  open-graph:
+    site-name: "Categorización de los mamíferos de Colombia"
+  title: "Categorización de los mamíferos de Colombia"
+  site-url: "https://mamiferoscolombia.org/categorias"
+  sidebar:  
+    search: true
+    logo: img/LogoSCMas.png
+    contents: auto
+#    tools:
+#      - href: https://github.com
+#        icon: github
+  navbar:
+    search: false
+    right:
+      - href: index.qmd
+        text: Inicio
+      - icon: house
+        href: https://mamiferoscolombia.org
+      - icon: facebook
+        href: https://www.facebook.com/SociedadColombianaMastozoologia
+      - icon: instagram
+        href: https://www.instagram.com/mastozoologiacolombia/
+      - icon: twitter
+        href: https://x.com/SCMas2
+      - icon: github
+        href: https://github.com/dlizcano/Mammal_category
+
+ 
+ 
+  page-footer:
+    background: "#ECB434"
+    left: Categorización de los mamíferos de Colombia is licensed under <br>[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} Creative Commons CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
+    right: Built by DL, with {{< fa heart title="a heart" >}}, [{{< fa brands r-project >}}](https://www.r-project.org/about.html) and 
+      [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/) 
+
+   
+
+
+execute:
+  echo: false
+  freeze: auto
+  
+  
+format:
+  html:
+    toc: true
+    theme:
+      light: flatly
+      dark: darkly
+      
+  typst:
+    pandoc:
+      citeproc: true
+
+#  pdf: 
+#    toc: true
+
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: right
+  loop: TRUE
+  
+filters:
+  - bibentry

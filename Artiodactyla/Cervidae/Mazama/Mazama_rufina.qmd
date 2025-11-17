@@ -1,0 +1,110 @@
+---
+title: "_Mazama rufina_"
+subtitle: "Venado soche"
+date: 11/10/2025
+author: Diego Lizcano
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "VU A2 cde",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = "yellow",
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+![_Mazama rufina_ hembra en camara trampa en PNN Los Nevados, Colombia (Foto: D. Lizcano)](https://www.researchgate.net/profile/Carlos-A-Delgado-V/publication/237471132/figure/fig1/AS:669425489420302@1536614882531/Mazama-rufina-female-in-camera-trap-in-Los-Nevados-national-park-Colombia-Photo-D.png)
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Mazama rufina")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        year,
+                                        recordedBy) |> 
+  filter(recordedBy!="ACT|CI|PNN") # remove this point
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+
+```
+
+
+
+## Justificación 
+
+En Colombia la especie se restringe a los ecosistemas Andinos. Se estima una reducción poblacional en 21 años anteriores (3 últimas generaciones) de 30% por pérdida de cantidad y calidad de hábitat, extensión de presencia y área de ocupación. Es una de las especies más cazada en los Andes para consumo y también es usada como mascota. Tiene otras amenazas como el ataque por perros ferales, colisión con vehículos. Presenta abundancias bajasy ha sido asociada a hábitats bien conservados.
+
+## Evaluadores:
+
+Héctor Ramirez, Mauricio Barbanti, Diego Gutierrez, José F. González-Maya, Bibiana Gómez, Tania Marisol González, Andrés Arias-Alzate, Olga Montenegro, Sebastían Mejia, Maria Piedad Baptiste E., Laura Nova-León, Lina M. García-Loaiza, Hector Manuel Arango, Cristian Cruz, Angélica Díaz, Elkin Noguera, Mónica Peñuela, Catalina Sánchez-Lalinde, Gabriel Pantoja, Lain E.Pardo.
+
+En este estudio @Lizcano2021 muestran algunos datos ecológicos.
+
+## References
+
+::: {#refs}
+:::

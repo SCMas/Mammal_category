@@ -1,0 +1,116 @@
+---
+title: "_Mazama zetta_"
+subtitle: "Venado de zetta"
+date: 11/10/2025
+author: Héctor Ramírez-Chaves
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "DD",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = "Secondary",
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+No hay foto de _Mazama zetta_.
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: false 
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Mazama zetta")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        #projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        year,
+                                        recordedBy) # |> 
+  filter(recordedBy!="INVERSIONES PALMAROSA,VILLANUEVA CASANARE") # remove this point
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+
+```
+
+
+
+## Justificación 
+
+Especie de amplia distribución, existe incertidumbre taxonómica por ser tratada anteriormente como una subespecie de M. americana, tiene amenazas como cacería y degradación del hábitat.
+
+
+
+
+
+## Evaluadores:
+
+Héctor Ramirez-Chaves, Mauricio Barbanti, Diego Gutierrez, José F. González-Maya, Bibiana Gómez, Andrés Arias-Alzate, Maria Piedad Baptiste E., Laura Nova-León, Lina M. García-Loaiza, Hector Manuel Arango, Cristian Cruz, Angélica Díaz, Elkin Noguera, Mónica Peñuela, Catalina Sánchez-Lalinde, Gabriel Pantoja, Lain E.Pardo
+
+
+
+
+
+## References
+
+::: {#refs}
+:::
