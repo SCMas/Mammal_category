@@ -1,0 +1,122 @@
+---
+title: "_Saguinus leucopus_"
+subtitle: "Titi gris"
+date: 11/10/2025
+author: Iván Soto
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+google-scholar: true
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "VU A4acde",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = value_box_theme(bg = "#F9E814"),#, fg = "#000000"),
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+![_Saguinus leucopus_ San Francisco, Antioquia (Foto: Sebastian Serna Muñoz )](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Saguinus_leucopus_235880857.jpg/960px-Saguinus_leucopus_235880857.jpg)
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Saguinus leucopus")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        year,
+                                        identifier,
+                                        #collectionCode,
+                                        recordedBy
+                                        ) |> 
+  filter(recordedBy!="NA") # remove this point
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+
+```
+
+
+
+## Justificación 
+
+Tiene una alta presión por tráfico ilegal para mascotas, su reducción poblacional alcanza más del 30% por reducción de calidad de hábitat y extracción, con una ventana temporal de 20 años con 10 años para el pasado y 10 para el futuro.
+
+ 
+En su estudio @Murillo-Montoya2022 describe datos ecologicos interesantes y @Osorio2025 amplia su distribucion con nuevos registros.
+
+
+
+
+## Evaluadores:
+
+Francy Forero, Julio Chacón, Sebastían García, Gabriela de Luna, Iván Soto.
+
+
+ 
+
+
+## Bibliografía citada 
+
+::: {#refs}
+:::
