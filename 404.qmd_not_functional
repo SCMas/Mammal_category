@@ -1,0 +1,17 @@
+---
+title: "Página no encontrada"
+subtitle: "error 404"
+format: 
+  html:
+    output:
+      html_document:
+        theme:
+          bslib: true
+#  PrettyTypst-typst: default
+---
+
+No se encuentra la página solicitada (quizás se haya movido o cambiado de nombre).
+
+![Página no encontrada](/img/404_SCMas_small.png)
+
+## Vuelve a la [página de inicio](https://mamiferoscolombia.org/categorias) para intentar encontrarla de nuevo, o intenta utilizar la función de búsqueda (la lupa de la izquierda).

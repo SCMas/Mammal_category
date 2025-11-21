@@ -1,0 +1,114 @@
+---
+title: "_Aotus griseimembra_"
+subtitle: "Mono nocturno caribeño"
+date: 11/10/2025
+author: Sebastián Bustamante
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+google-scholar: true
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "VU A4cd",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = value_box_theme(bg = "#F9E814"),#, fg = "#000000"),
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+![_Aotus griseimembra_ en La Rochela, Simacota, Santander, Colombia (Foto: Julián Arango-Lozano)](https://www.researchgate.net/profile/Julian-Arango-Lozano/publication/385144078/figure/fig2/AS:11431281285407437@1729710132835/Aotus-griseimembra-couple-in-a-nearly-tree-to-the-ground-sleeping-site_W640.jpg)
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Aotus griseimembra")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        year,
+                                        recordedBy) |> 
+  filter(recordedBy!="NA") # remove this point
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+
+```
+
+
+
+## Justificación 
+
+Se estima una reducción poblacional del 30%, con una pérdida en el pasado (14 años) y continua hacia el futuro (10 años). Pese a que es una especie de amplia distribución, considerada como frecuente y con plasticidad en el uso de coberturas (tolera ambientes degradados y zonas periurbanas), la pérdida y fragmentación del hábitat como los bosques húmedos del Magdalena Medio y del Bosque Seco en el Caribe están conduciendo a un declive. Asimismo, la extracción de individuos para su uso como mascota impacta las poblaciones de la especie, y en menor proporción mortalidad por lineas eléctricas. 
+
+
+## Evaluadores:
+
+Sebastián Montilla, Sebastián Bustamante, Hugo Mantilla, Juan David Sanchez, Javier García, Gabriela de Luna, Francy Forero, Adriana Acero-Murcia.
+
+
+
+En este estudio @Arango-Lozano2024 muestran algunos datos ecológicos.
+
+## Bibliografía citada 
+
+::: {#refs}
+:::

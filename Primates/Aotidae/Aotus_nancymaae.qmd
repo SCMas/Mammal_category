@@ -1,0 +1,118 @@
+---
+title: "_Aotus nancymaae_"
+subtitle: "Mono nocturno de Nancy"
+date: 11/10/2025
+author: Angela Maldonado
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+google-scholar: true
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "EN B1+B2ab(iii,v)",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = value_box_theme(bg = "#FC7F3F"),#, fg = "#000000"),
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+![_Aotus nancymaae_ en Brazil (Foto: Whaldener Endo.)](https://inaturalist-open-data.s3.amazonaws.com/photos/210197706/medium.jpg)
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Aotus nancymaae")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        #projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        #year,
+                                        dateIdentified,
+                                        collectionCode,
+                                        #recordedBy
+                                        ) #|> 
+ # filter(recordedBy!="NA") # remove this point
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+
+```
+
+
+
+## Justificación 
+
+Especie distribuida en pocas localidades (menor a 5) de la Amazonia; presenta una reducción de su área de ocupación y calidad de hábitat por la expansión de la frontera agrícola, así como por el aumento y permanencia de cultivos ilícitos y contaminación del suelo. Se han identificado varias amenazas que inciden en el declive de las poblaciones como caza y tráfico ilegal para tenencia como mascota. Además, la extracción de ejemplares silvestres para la investigación biomédica se concibe como una problemática para la salud de las poblaciones. No solo se eliminan individuos de los núcleos poblacionales, sino que, posterior a ser sometidos a las prácticas biomédicas, son liberados al medio natural bajo un manejo poco estandarizado. Lo anterior se constituye como una vía para la introducción de patógenos ya identificados en algunos individuos. El tráfico de especies desde Perú hacia Colombia también está afectando la estructura filogeográfica de la especie (genéticamente comprobado) (Maldonado et al. in press., Maldonado et al. 2020). No se identifica un efecto rescate de poblaciones vecinas y tampoco hay colonización de poblaciones adyacentes.
+
+ 
+
+
+## Evaluadores:
+
+Sebastián Bustamente, Hugo Mantilla, Sebastián Montilla, Julio Chacón, Iván Soto, Luz Elena Rueda, Nelson Galvis, Juan David Sánchez, Andrés Link, Gabriela de Luna, Pablo Stevenson, Adriana Acero-Murcia, Alma Hernández. 
+
+
+
+
+## Bibliografía citada 
+
+::: {#refs}
+:::

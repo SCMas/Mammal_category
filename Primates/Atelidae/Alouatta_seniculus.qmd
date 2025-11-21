@@ -1,0 +1,120 @@
+---
+title: "_Alouatta seniculus_"
+subtitle: "Mono aullador rojo"
+date: 11/10/2025
+author: Julio Chacón-Pacheco
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+google-scholar: true
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "NT",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = value_box_theme(bg = "#CCE226"),#, fg = "#000000"),
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+![_Alouatta seniculus_  (Foto: Miguel Rangel jr.)](https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Alouatta_seniculus_Sorocaba.JPG/960px-Alouatta_seniculus_Sorocaba.JPG)
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Alouatta seniculus")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        year,
+                                        identifier,
+                                        #collectionCode,
+                                        recordedBy
+                                        ) |> 
+  filter(recordedBy!="NA") # remove this point
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+
+```
+
+
+
+## Justificación 
+
+Especie susceptible a causa de la deforestación, la caza y el tráfico, 25% reducción de la calidad de hábitat y la presencia de amenazas reales o potenciales en ventana temporal de 30 años. Resiliente dadas sus características folívoras, logra sobrevivir sin mayor exigencia.
+
+
+Los estudios de @Miranda-Cardona2022, @Silva-Meneses2025 y @Montilla2017 describen datos de su ecología y distribución. 
+
+ 
+
+## Evaluadores:
+
+Hugo Mantilla, Ivan Soto, Alma Hernández, Francy Forero, Diana Guzmán, Juan David Sánchez.
+
+
+
+
+## Bibliografía citada 
+
+::: {#refs}
+:::

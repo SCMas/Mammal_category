@@ -1,0 +1,121 @@
+---
+title: "_Ateles fusciceps_"
+subtitle: "Mono araña de cabeza negra, marimonda del Chocó"
+date: 11/10/2025
+author: Alma Hernández y Julio Chacón-Pacheco
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+google-scholar: true
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "CR A4acd",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = value_box_theme(bg = "#D81E05"),#, fg = "#000000"),
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+![_Ateles fusciceps_  (Foto: Petruss)](https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Ateles_fusciceps_Colombia.JPG/500px-Ateles_fusciceps_Colombia.JPG)
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Ateles fusciceps")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        year,
+                                        identifier,
+                                        #collectionCode,
+                                        recordedBy
+                                        ) |> 
+  filter(recordedBy!="NA") # remove this point
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+
+```
+
+
+
+## Justificación 
+
+Se estima una reducción poblacional del 80% en los últimos 45 años, con 30 años hacia el pasado y 15 hacia el futuro (tres generaciones). La especie ya no se registra en la región Pacífica. Hernández-Jaramillo (datos sin publicar) realizó entrevistas y muestreos en toda el área de distribución de la especie (45 localidades) y sólo fue detectada en 15 localidades. El estudio de @Hernandez-Jaramillo2025 confirma que las pocas poblaciones saludables presentan fuertes presiones por sobreexplotación, resultado de cacería y tráfico por parte de las comunidades indígenas, negras y afrodescendientes, lo cual se intensifica con los reportes de decomisos de adultos y crías por parte de las Corporaciones Autónomas Regionales del Urabá y Córdoba. Aunque en el Chocó aún existen grandes extensiones de bosque, actualmente se encuentran algunos núcleos de deforestación que estarían reduciendo el área de ocupación, así como la calidad del hábitat de la especie, aumentando el riesgo de extinción. Se considera localmente extinta al sur del país. El cambio en la categoría de riesgo de extinción no es genuino, respecto a la evaluación realizada en 2014, puesto que surge como resultado nueva información y conocimiento sobre la especie.
+
+
+
+ 
+
+## Evaluadores:
+
+Hugo Mantilla, Juan David Sánchez, Andrés Link, Sebastián Bustamente, Angela Maldonado, Juan David Sánchez, 
+ 
+
+
+
+
+
+## Bibliografía citada 
+
+::: {#refs}
+:::

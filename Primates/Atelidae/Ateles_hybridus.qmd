@@ -1,0 +1,122 @@
+---
+title: "_Ateles hybridus_"
+subtitle: "Mono araña o choibo, marimonda del Magdalena"
+date: 11/10/2025
+author: Andrés Link
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+google-scholar: true
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "CR A4acd",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = value_box_theme(bg = "#D81E05"),#, fg = "#000000"),
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+![_Ateles hybridus_  Barquisimeto, Venezuela (Foto: Tom Friedel, www.birdphotos.com)](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/BrownSpiderMonkey_%28edit2%29.jpg/960px-BrownSpiderMonkey_%28edit2%29.jpg)
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Ateles hybridus")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        year,
+                                        identifier,
+                                        #collectionCode,
+                                        recordedBy
+                                        ) |> 
+  filter(recordedBy!="NA") # remove this point
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+
+```
+
+
+
+## Justificación 
+
+Se estima que la especie presenta una reducción poblacional del 80% en un periodo de 45 años o tres generaciones, incluyendo las dos generaciones pasadas (20 años) y una futura (15 años). La especie se caracteriza por su baja capacidad de dispersión y bajo flujo genético. Su área de ocupación se ha reducido, producto de la fragmentación y pérdida de hábitat. Existen fuertes presiones en las dos principales zonas donde se distribuyen probablemente los remanentes de poblaciones más grandes de la especie, Serranía de San Lucas y Catatumbo. Por otro lado, se ha evidenciado que la especie es aprovechada para el consumo de su carne, así como para tenencia como mascota.
+
+
+
+El estudio de @Mejia-Correa2016 registra la especie en un fragmento de bosque húmedo del municipio de Barrancabermeja, Santander, Colombia. 
+ 
+
+## Evaluadores:
+
+Vladimir Rojas, Cristian Cruz Rodríguez, José González-Maya, Esteban Payán, Federico Mosquera, Andrés Arias-Alzate, Andrés Link, Angélica Díaz, Felipe Suarez-Castro, Oscar E. Murillo-García, Lain E. Pardo, Mauricio Vela, María Torres Martínez, 
+ 
+
+
+
+
+
+## Bibliografía citada 
+
+::: {#refs}
+:::

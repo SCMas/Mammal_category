@@ -1,0 +1,122 @@
+---
+title: "_Ateles belzebuth_"
+subtitle: "Mono araña, marimonda"
+date: 11/10/2025
+author: Andrés Link
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+google-scholar: true
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "EN A4acd",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = value_box_theme(bg = "#FC7F3F"),#, fg = "#000000"),
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+![_Ateles belzebuth_  (Foto: Fábio Manfredini)](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Ateles_belzebuth_belzebuth.jpg/960px-Ateles_belzebuth_belzebuth.jpg)
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Ateles belzebuth")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        year,
+                                        identifier,
+                                        #collectionCode,
+                                        recordedBy
+                                        ) |> 
+  filter(recordedBy!="NA") # remove this point
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+
+```
+
+
+
+## Justificación 
+
+Se infiere una reducción poblacional de al menos el 50% con una ventana temporal de 45 años con 30 años en el pasado y 15 años al futuro, por pérdida de hábitat y cacería. Aunque presenta amplia distribución, su hábitat se ha reducido en extensión y calidad, pues coincide con grandes núcleos de deforestación en la Amazonia. El cambio en la categoría de riesgo de extinción no es genuino, respecto a la evaluación realizada en 2014, puesto que surge como resultado nueva información y conocimiento sobre la especie.
+
+
+
+El estudio de @Aya2020 reporta la especie en Playa Rica, La Macarena, Meta, Colombia.
+
+ 
+
+## Evaluadores:
+
+Alma Hernández, Néstor Roncancio Duque, Francy Forero, Sebastián Bustamante, Julio Chacón, Hugo Mantilla, Sebastián García, Diana Guzmán, Natalia Atuesta, Sebastián Montilla, Luz Elena Rueda, Juan David Sánchez, Gabriela de Luna, Julián León, Xiomara Carretero, Nelson Galvis, Mónica Alejandra Ramírez, Pablo Stevenson, Adriana Acero-Murcia, Laura Abondano, Angela Maldonado, John Aristizabal. 
+
+
+
+
+
+## Bibliografía citada 
+
+::: {#refs}
+:::

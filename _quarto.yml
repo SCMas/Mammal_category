@@ -4,8 +4,8 @@ project:
 
 website:
   google-analytics:
-    tracking-id: "G-2XMZ0PKMPK" # Replace with your own actual GA4 tracking ID
-    anonymize-ip: true
+    tracking-id: "G-297VCZ49MN" # Replace with your own actual GA4 tracking ID
+    anonymize-ip: false
   favicon: favicon.png
   description: "mamíferos | Colombia | Lista roja de mamíferos | mamíferos amenazados | mammal red list"
   cookie-consent: false
@@ -14,6 +14,8 @@ website:
     site-name: "Categorización de los mamíferos de Colombia"
   title: "Categorización de los mamíferos de Colombia"
   site-url: "https://mamiferoscolombia.org/categorias"
+  repo-url: https://github.com/dlizcano/mammalcol
+  repo-actions: [issue]
   sidebar:  
     search: true
     logo: img/LogoSCMas.png
@@ -42,7 +44,7 @@ website:
   page-footer:
     background: "#ECB434"
     left: Categorización de los mamíferos de Colombia is licensed under <br>[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} Creative Commons CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
-    right: Built by DL, with {{< fa heart title="a heart" >}}, [{{< fa brands r-project >}}](https://www.r-project.org/about.html) and 
+    right: Built by [DL](https://dlizcano.github.io/about), with {{< fa heart title="a heart" >}}, [{{< fa brands r-project >}}](https://www.r-project.org/about.html) and 
       [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/) 
 
    
@@ -61,6 +63,9 @@ format:
       dark: darkly
       
   typst:
+    mainfont: "Fira Sans"
+    logo: 
+      small: img/Logo_SCMas_Horizontal_byn.png
     pandoc:
       citeproc: true
 

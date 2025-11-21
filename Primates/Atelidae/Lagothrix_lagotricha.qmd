@@ -1,0 +1,117 @@
+---
+title: "_Lagothrix lagothricha_"
+subtitle: "Mono churuco"
+date: 11/10/2025
+author: Pablo Stevenson
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+google-scholar: true
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "VU A4acd",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = value_box_theme(bg = "#F9E814"),#, fg = "#000000"),
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+![_Lagothrix lagotricha_  en el zoológico del parque Jaime Duque, Cundinamarca, Colombia (Foto: Petruss)](https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Lagothrix_lagotricha_01.JPG/960px-Lagothrix_lagotricha_01.JPG)
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Lagothrix lagothricha")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        year,
+                                        identifier,
+                                        #collectionCode,
+                                        recordedBy
+                                        ) |> 
+  filter(recordedBy!="NA") # remove this point
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+
+```
+
+
+
+## Justificación 
+
+Se estima que la especie presenta una reducción del 30% en una ventana móvil de 30 años en el pasado y 15 años en el futuro, dado que existe una reducción de la calidad y cantidad de hábitat, a causa de la presencia de grandes núcleos de deforestación en la región Andina, y por la presión por cacería.
+
+
+
+## Evaluadores:
+
+Hugo Mantilla, Natalia Atuesta, Gabriela de Luna, Mónica Alejandra Ramírez, Julián León, Sebastián Montilla, Angela Maldonado, Francy Forero, Xyomara Carretero, Juan David Sánchez, Andrés Link.
+ 
+
+
+
+## Bibliografía citada 
+
+::: {#refs}
+:::

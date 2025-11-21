@@ -12,6 +12,7 @@ bibliography: refs.bib
 citation:
   type: post-weblog
   container-title: "Categorización de los mamíferos de Colombia"
+google-scholar: true
 ---
 
 ```{r}
@@ -37,7 +38,7 @@ value_box(
   title = NULL,
   value = "DD",
   # showcase = bs_icon("music-note-beamed"),
-  theme = value_box_theme(bg = "#e6f2fd"),
+  theme = value_box_theme(bg = "#D1D1C6"),#, fg = "#000000")
   max_height="100px"
 )
 
@@ -45,7 +46,7 @@ value_box(
 
 ## Foto
 
-No hay foto de _Mazama temama_.
+No hay foto de _Mazama zamora_.
 
 ## Mapa
 

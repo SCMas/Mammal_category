@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 _freeze
+
+/.quarto/
+**/*.quarto_ipynb
