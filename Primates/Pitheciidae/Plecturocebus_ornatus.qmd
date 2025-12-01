@@ -107,15 +107,18 @@ _Plecturocebus ornatus_ está catalogado como Vulnerable a la luz de una disminu
 
 
 
-
-## Evaluadores:
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Pablo Stevenson, Juan David Sánchez, Javier García.
 
 
+### Con apoyo de:
 
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
-
+ 
  
 
 

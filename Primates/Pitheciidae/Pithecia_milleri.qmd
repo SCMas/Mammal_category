@@ -105,17 +105,20 @@ Especie con distribución restringida en Putumayo y Caquetá. Se estima que la d
 
 
 
-
-
-
-
-
-## Evaluadores:
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Darwin Morales, Angela Maldonado, Sebastián García, Angela Maldonado, Iván Soto, Francy Forero, Andrés Link, Gabriela de Luna, Xyomara Carretero, Adriana Acero-Murcia, Diana Guzmán, Juan David Sánchez.
 
 
 
+
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
+
+ 
 
  
 

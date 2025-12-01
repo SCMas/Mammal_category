@@ -105,14 +105,19 @@ Tendencia poblacional en baja. Afectado por el tráfico, cazados consumidos, pé
 
 
 
-
-## Evaluadores:
+ 
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Alma Hernández, Julio Chacón, Sebastián García, Juan David Sánchez, Andrés Link, Néstor Roncancio, Iván Soto.
 
 
- 
+### Con apoyo de:
 
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
+
+ 
 
 
 ## Bibliografía citada 

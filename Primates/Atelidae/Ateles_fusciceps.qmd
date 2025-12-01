@@ -107,13 +107,16 @@ Se estima una reducción poblacional del 80% en los últimos 45 años, con 30 a�
 
 
  
-
-## Evaluadores:
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Hugo Mantilla, Juan David Sánchez, Andrés Link, Sebastián Bustamente, Angela Maldonado, Juan David Sánchez, 
  
 
+### Con apoyo de:
 
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "_Plecturocebus_discolor_"
+title: "_Plecturocebus discolor_"
 subtitle: "Huicoco de cola blanca"
 date: 11/10/2025
 author: 
@@ -106,15 +106,19 @@ Especie de distribución marginal en Colombia, Los bosques que habita se encuent
 
 
 
-
-
-
-## Evaluadores:
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Pablo Stevenson, Juan David Sánchez, Javier García.
 
 
 
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
+
+ 
 
 
  

@@ -107,16 +107,16 @@ Cheracebus medimi se evalúa como vulnerable ya que se sospecha que ha disminuid
 
 
 
-
-
-
-
-## Evaluadores:
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Darwin Morales, Julio Chacon-Pacheco, Angela Maldonado, Sebastián García, Angela Maldonado, Iván Soto, Francy Forero, Andrés Link, Gabriela de Luna, Xyomara Carretero, Adriana Acero-Murcia, Diana Guzmán, Juan David Sánchez.
 
 
+### Con apoyo de:
 
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
  
 

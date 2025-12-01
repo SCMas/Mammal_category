@@ -102,12 +102,23 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 Debido a una posible reducción de la población del 80 % o más en un lapso de 18 años (tres generaciones; 2018-2036). Este declive se debe a una combinación de factores: la persistencia de tasas anuales aceleradas de pérdida de bosques en toda la distribución de la especie, estudios que demuestran la transformacion del hábitat forestal restante para esta especie y un comercio ilegal de mascotas que persiste, representan amenazas significativas. 
 
-Recientemente fue introducido al PNN Tayrona. 
+Recientemente fue introducido al Parque Nacional Natural Tayrona. 
 
 
-## Evaluadores:
+
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Francy Forero, Julio Chacón, Sebastían García, Gabriela de Luna, Iván Soto.
+
+
+ 
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
+
+ 
 
 
 ## Bibliografía citada

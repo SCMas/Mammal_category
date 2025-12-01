@@ -107,9 +107,17 @@ Se conoce poco de la biologia de la especie, no hay datos actualizados de sus de
 
 
 
-## Evaluadores:
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Julio Chacón, Alma Hernández, Sebastián García, Juan David Sánchez, Andrés Link, Néstor Roncancio, Iván Soto.
+
+
+ 
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
 
  

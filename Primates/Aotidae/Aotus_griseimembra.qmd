@@ -99,14 +99,23 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 Se estima una reducción poblacional del 30%, con una pérdida en el pasado (14 años) y continua hacia el futuro (10 años). Pese a que es una especie de amplia distribución, considerada como frecuente y con plasticidad en el uso de coberturas (tolera ambientes degradados y zonas periurbanas), la pérdida y fragmentación del hábitat como los bosques húmedos del Magdalena Medio y del Bosque Seco en el Caribe están conduciendo a un declive. Asimismo, la extracción de individuos para su uso como mascota impacta las poblaciones de la especie, y en menor proporción mortalidad por lineas eléctricas. 
 
+En este estudio @Arango-Lozano2024 muestran algunos datos ecológicos.
 
-## Evaluadores:
+
+
+::: {layout="[[65,35]]"}
+### Evaluadores:  
 
 Sebastián Montilla, Sebastián Bustamante, Hugo Mantilla, Juan David Sanchez, Javier García, Gabriela de Luna, Francy Forero, Adriana Acero-Murcia.
 
 
+### Con apoyo de:
 
-En este estudio @Arango-Lozano2024 muestran algunos datos ecológicos.
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
+
+
+
 
 ## Bibliografía citada 
 

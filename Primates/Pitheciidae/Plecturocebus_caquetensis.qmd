@@ -111,13 +111,19 @@ En su estudio @Acero-Murcia2021 describen con detalle el comportamiento reproduc
 
 
 
-## Evaluadores:
+
+
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Javier García, Angela Maldonado, Xiomara Carretero.
 
+### Con apoyo de:
 
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
-
+ 
 
  
 

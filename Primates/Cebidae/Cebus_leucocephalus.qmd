@@ -104,16 +104,22 @@ Anteriormente considerado como subespecie del capuchino de frente blanca (_Cebus
 
 
 
+ 
+::: {layout="[[65,35]]"}
+### Evaluadores:
+
+Sebastián García, Alma Hernández, John Aristizabal, Lina García, Gabriela de Luna, Adriana Acero-Murcia, Xyomara Carretero, Diana Guzmán, Iván Soto, Andrés Link.
 
 
 
-## Evaluadores:
 
-Sebastián García, Alma Hernández, John Aristizabal, Lina García, Gabriela de Luna, Adriana Acero-Murcia, Xyomara Carretero, Diana Guzmán, Iván Soto, Andrés Link
+### Con apoyo de:
 
-
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
  
+
 
 
 

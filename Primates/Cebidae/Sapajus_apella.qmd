@@ -59,6 +59,8 @@ value_box(
 #| warning: false
 #| #label: fig-line-plot
 #| fig-cap: "Mapa de puntos. Datos de GBIF"
+#| #column: screen-inset-right
+#| 
 library(rgbif)
 library(sf)
 library(mapview)
@@ -83,7 +85,12 @@ dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
                                         collectionCode,
                                         recordedBy
                                         ) |> 
-  filter(recordedBy!="NA") # remove this point
+  filter(recordedBy!="NA") |> 
+  filter(recordedBy!="B. Mechler") |> # remove this point
+  filter(recordedBy!="C.A. Velsquez") |> 
+  filter(recordedBy!="Yaneth Muñoz-Saba")
+# remove pionts asked by Pablo
+dat_sp1 <- dat_sp1[-c(1383, 1381, 1380, 1387, 1378, 1466, 1158),]
 
 # definir CRS
 projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
@@ -93,7 +100,7 @@ sp_sf <- st_as_sf(x = dat_sp1,
                                     "decimalLatitude"),
                             crs = projlatlon)
 
-mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+mapview(sp_sf, zcol="species", alpha = 0)
 
 ```
 
@@ -107,19 +114,15 @@ En su estudio @Alzate-Gaviria2023 presenta nuevos registros para Cundinamarca.
 
 
 
+::: {layout="[[65,35]]"}
+### Evaluadores:  
 
+José González-Maya, Diego Gutierrez, Oscar E. Murillo-Garcia, Julio Chacon-Pacheco, Julio Chacón, Angela Maldonado, Sebastián García, Angela Maldonado, Iván Soto, Francy Forero, Andrés Link, Gabriela de Luna, Xyomara Carretero, Adriana Acero-Murcia, Diana Guzmán, Juan David Sánchez.  
 
+### Con apoyo de:
 
-
-
-## Evaluadores:
-
-José González-Maya, Diego Gutierrez, Oscar E. Murillo-Garcia, Julio Chacon-Pacheco, Julio Chacón, Angela Maldonado, Sebastián García, Angela Maldonado, Iván Soto, Francy Forero, Andrés Link, Gabriela de Luna, Xyomara Carretero, Adriana Acero-Murcia, Diana Guzmán, Juan David Sánchez.
-
-
-
-
- 
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
 
 

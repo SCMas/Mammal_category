@@ -102,14 +102,20 @@ No hay registros de GBIF en Colombia.
 
 ## Justificación 
 
-Se conoce poco de la especie, no hay datos actualizados de su distribución.
+Se conoce muy poco de la especie, no hay datos actualizados de su distribución en Colombia. Esta especie no ha sido registrada en el país desde hace varias dédadas.  Hay dos especimenes en el ICN y uno en el IAvH. 
 
 
-## Evaluadores:
+ 
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Danny Rojas, Miguel Rodríguez, Sebastian Cifuentes, Julio Chacón, Vladimir Rojas, Francisco Sánchez, Elkin Noguera, Hugo Mantilla, Maria Torres, Andrés Julián Lozano 
 
  
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
 
 

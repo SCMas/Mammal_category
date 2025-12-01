@@ -46,7 +46,7 @@ value_box(
 
 ## Foto
 
-![_Lagothrix lagotricha_  en el zoológico del parque Jaime Duque, Cundinamarca, Colombia (Foto: Petruss)](https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Lagothrix_lagotricha_01.JPG/960px-Lagothrix_lagotricha_01.JPG)
+![_Lagothrix lagotricha_  Reserva La Fortuna, Medina Cundinamarca, Colombia (Foto: Dr. Thomas Walschburger)](/img/sp/Lagothrix_lagothricha.jpg)
 
 ## Mapa
 
@@ -83,6 +83,9 @@ dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
                                         recordedBy
                                         ) |> 
   filter(recordedBy!="NA") # remove this point
+# remove point asked by Pablo
+dat_sp1 <- dat_sp1[-c(894, 893, 808),]
+
 
 # definir CRS
 projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
@@ -92,7 +95,7 @@ sp_sf <- st_as_sf(x = dat_sp1,
                                     "decimalLatitude"),
                             crs = projlatlon)
 
-mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+mapview(sp_sf, zcol="species", alpha = 0)
 
 ```
 
@@ -100,14 +103,21 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ## Justificación 
 
-Se estima que la especie presenta una reducción del 30% en una ventana móvil de 30 años en el pasado y 15 años en el futuro, dado que existe una reducción de la calidad y cantidad de hábitat, a causa de la presencia de grandes núcleos de deforestación en la región Andina, y por la presión por cacería.
+Se estima que la especie presenta una reducción del 30% en una ventana móvil de 30 años en el pasado y 15 años en el futuro, dado que existe una reducción de la calidad y cantidad de hábitat, a causa de la presencia de grandes núcleos de deforestación en la región Andina y Amazónica, y por la presión por cacería.
 
 
 
-## Evaluadores:
+ 
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Hugo Mantilla, Natalia Atuesta, Gabriela de Luna, Mónica Alejandra Ramírez, Julián León, Sebastián Montilla, Angela Maldonado, Francy Forero, Xyomara Carretero, Juan David Sánchez, Andrés Link.
  
+
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
 
 

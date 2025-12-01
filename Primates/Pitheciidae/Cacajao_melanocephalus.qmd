@@ -47,7 +47,7 @@ value_box(
 
 ## Foto
 
-![_Cacajao melanocephalus_  Brazil. (Foto: Tomaz Nascimento de Melo)](https://colombia.inaturalist.org/photos/109000525)
+![_Cacajao melanocephalus_  Brazil. (Foto: Tomaz Nascimento de Melo)](https://inaturalist-open-data.s3.amazonaws.com/photos/109000525/medium.jpg)
 
 ## Mapa
 
@@ -109,12 +109,16 @@ La reducción que se infiere que se aproxima al 30%, en las últimas generacione
 
 
 
-
-## Evaluadores:
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 José González-Maya, Julio Chacon-Pacheco, Angela Maldonado, Sebastián García, Angela Maldonado, Iván Soto, Francy Forero, Andrés Link, Gabriela de Luna, Xyomara Carretero, Adriana Acero-Murcia, Diana Guzmán, Juan David Sánchez.
 
 
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
 
  

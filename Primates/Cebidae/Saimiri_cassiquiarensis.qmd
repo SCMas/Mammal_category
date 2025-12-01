@@ -109,12 +109,18 @@ Ampliamente distribuida, abundante, se adapta bien a ambientes preturbados.
 
 
 
-## Evaluadores:
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 José González-Maya, Diego Gutierrez, Oscar E. Murillo-Garcia, Julio Chacon-Pacheco, Julio Chacón, Angela Maldonado, Sebastián García, Angela Maldonado, Iván Soto, Francy Forero, Andrés Link, Gabriela de Luna, Xyomara Carretero, Adriana Acero-Murcia, Diana Guzmán, Juan David Sánchez.
 
 
+### Con apoyo de:
 
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
+
+ 
 
  
 

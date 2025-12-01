@@ -2,7 +2,7 @@
 title: "_Leontocebus fuscus_"
 subtitle: "Titi pigmeo"
 date: 11/10/2025
-author: NA
+author: Sebastián Garcia-Restrepo
 format: html
 output:
   html_document:
@@ -46,7 +46,7 @@ value_box(
 
 ## Foto
 
-![_Leontocebus fuscus_  (Foto: jeremdelajungle )](https://colombia.inaturalist.org/photos/359032556)
+![_Leontocebus fuscus_  (Foto: jeremdelajungle )](https://inaturalist-open-data.s3.amazonaws.com/photos/359032556/medium.jpeg)
 
 ## Mapa
 
@@ -105,12 +105,19 @@ Especie abundante y común, dada su abundancia suele ser víctima de caza, forma
 
 
 
-## Evaluadores:
+ 
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Alma Hernández, Julio Chacón, Sebastián García, Juan David Sánchez, Andrés Link, Néstor Roncancio, Iván Soto.
 
-
  
+ 
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
+
 
 
 

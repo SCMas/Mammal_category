@@ -47,7 +47,7 @@ value_box(
 
 ## Foto
 
-![_Cheracebus lucifer_   Sucumbíos, Ecuador. (Foto: Marc Faucer )](https://colombia.inaturalist.org/photos/11749601)
+![_Cheracebus lucifer_   Sucumbíos, Ecuador. (Foto: Marc Faucer )](https://inaturalist-open-data.s3.amazonaws.com/photos/11749601/medium.jpeg)
 
 ## Mapa
 
@@ -110,12 +110,16 @@ Su distribución en Colombia se restringe a la Amazonía. Afronta amenazas como 
 
 
 
-
-## Evaluadores:
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 José González-Maya, Julio Chacon-Pacheco, Angela Maldonado, Sebastián García, Angela Maldonado, Iván Soto, Francy Forero, Andrés Link, Gabriela de Luna, Xyomara Carretero, Adriana Acero-Murcia, Diana Guzmán, Juan David Sánchez.
 
 
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
 
  

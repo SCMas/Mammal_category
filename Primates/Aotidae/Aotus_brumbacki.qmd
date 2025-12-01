@@ -97,14 +97,23 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ## Justificación 
 
-Se sostiene la categorización global.
+Vulnerable debido a una presunta reducción poblacional del 30% o más en los últimos 24 años (tres generaciones), que probablemente continuará durante los próximos 24 años.  
 
-## Evaluadores:
+Gran parte de la presunta distribución de este mono se encuentra en regiones de sabana que ya han sido bosques talados, fragmentados y focos de deforestación. Las subpoblaciones supervivientes siguen amenazadas por la continua y creciente pérdida de hábitat debido a la plantación de palma aceitera y cultivos ilícitos, la expansión de la ganadería, el aumento de la exploración petrolera, la minería, y los incendios.
+
+En este estudio @Carretero2024 muestran algunos datos ecológicos sobre sus sitios de anidación, y el estudio de @Vargas-Gomez2023 muestran datos de su dieta.
+
+
+
+::: {layout="[[65,35]]"}
+### Evaluadores:  
 
 Sebastián Montilla, Juan David Sánchez, Andrés Link, Julio Chacón, Claudia Brieva, Néstor Roncancio, Pablo Stevenson, Hugo Mantilla, Francy Forero, Gabriela de Luna, Sebastián Bustamente, Iván Soto, Xyomara Carretero, Adriana Acero-Murcia, Sebastián García. 
 
+### Con apoyo de:
 
-En este estudio @Carretero2024 muestran algunos datos ecológicos sobre sus sitios de anidación y el estudio de @Vargas-Gomez2023 muestran datos de su dieta.
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
 
 ## Bibliografía citada 

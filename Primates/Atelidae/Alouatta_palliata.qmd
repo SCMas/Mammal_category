@@ -102,16 +102,20 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ## Justificación 
 
-Pese a que la especie con amplia distribución. Se estima una reducción del 30% del tamaño poblacional en un periodo de 30 años o tres generaciones, pasada (20 años) y futura (10 años). Lo anterior producto de la observación directa en las zonas del Chocó, Cauca y Caribe, sumado a la reducción del área de ocupación y calidad del hábitat por quemas y deforestación, además de la cacería para tráfico de individuos y colecta.
+Pese a que la especie tiene amplia distribución, se estima una reducción del 30% del tamaño poblacional en un periodo de 30 años o tres generaciones pasadas (20 años) y futura (10 años). Lo anterior producto de la observación directa en las zonas del Chocó, Cauca y Caribe, sumado a la reducción del área de ocupación y calidad del hábitat por quemas y deforestación, además de la cacería para tráfico de individuos y colecta.
 
 
- 
 
-## Evaluadores:
+
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Hugo Mantilla, Ivan Soto, Alma Hernández, Francy Forero, Julio Chacón, Diana Guzmán, Juan David Sánchez. 
 
+### Con apoyo de:
 
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
 
 ## Bibliografía citada 

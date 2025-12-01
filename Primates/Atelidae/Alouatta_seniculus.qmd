@@ -107,10 +107,16 @@ Los estudios de @Miranda-Cardona2022, @Silva-Meneses2025 y @Montilla2017 describ
 
  
 
-## Evaluadores:
+
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Hugo Mantilla, Ivan Soto, Alma Hernández, Francy Forero, Diana Guzmán, Juan David Sánchez.
 
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
 
 

@@ -100,16 +100,22 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 ## Justificación 
 
 Se sospecha e infiere una reducción poblacional del 30% en un periodo de 24 años (tres generaciones), 14 años hacia el pasado y con una proyección de disminución continua en l10 años. Sus principales amenazas incluyen la pérdida de hábitat en razón a la deforestación, con núcleo en los Andes y centros poblados, y la expansión de a frontera agrícola. Otras amenzas en menor proporición incluyen la extracción para uso como mascota y mortalidad por líneas electricas.
- 
+
+En este estudio @Montilla2020 muestran algunas amenazas y @Montilla2017 muestra su distribución.
 
 
-## Evaluadores:
+
+::: {layout="[[65,35]]"}
+### Evaluadores:  
 
 Angela Maldonado, Iván Soto, Claudia Brieva, Néstor Roncancio, Hugo Mantilla, Natalia Atuesta.  
 
 
+### Con apoyo de:
 
-En este estudio @Montilla2020 muestran algunas amenazas y @Montilla2017 muestra su distribución.
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
+
 
 
 ## Bibliografía citada 

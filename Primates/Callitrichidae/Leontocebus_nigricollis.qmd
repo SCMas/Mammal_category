@@ -2,7 +2,7 @@
 title: "_Leontocebus nigricollis_"
 subtitle: "Titi culinegro"
 date: 11/10/2025
-author: NA
+author: Sebastián Garcia-Restrepo
 format: html
 output:
   html_document:
@@ -105,9 +105,18 @@ Especie ampliamente distribuida y tráficada como mascota.
 
 
 
-## Evaluadores:
+
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Alma Hernández, Julio Chacón, Sebastián García, Juan David Sánchez, Andrés Link, Néstor Roncancio, Iván Soto.
+
+ 
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
+
 
 
  

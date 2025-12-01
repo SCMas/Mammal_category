@@ -106,12 +106,17 @@ Tiene una alta presión por tráfico ilegal para mascotas, su reducción poblaci
 En su estudio @Murillo-Montoya2022 describe datos ecologicos interesantes y @Osorio2025 amplia su distribucion con nuevos registros.
 
 
-
-
-## Evaluadores:
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Francy Forero, Julio Chacón, Sebastían García, Gabriela de Luna, Iván Soto.
 
+
+ 
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
  
 

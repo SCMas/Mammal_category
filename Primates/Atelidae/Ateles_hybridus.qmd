@@ -100,19 +100,25 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ## Justificación 
 
-Se estima que la especie presenta una reducción poblacional del 80% en un periodo de 45 años o tres generaciones, incluyendo las dos generaciones pasadas (20 años) y una futura (15 años). La especie se caracteriza por su baja capacidad de dispersión y bajo flujo genético. Su área de ocupación se ha reducido, producto de la fragmentación y pérdida de hábitat. Existen fuertes presiones en las dos principales zonas donde se distribuyen probablemente los remanentes de poblaciones más grandes de la especie, Serranía de San Lucas y Catatumbo. Por otro lado, se ha evidenciado que la especie es aprovechada para el consumo de su carne, así como para tenencia como mascota.
+Se estima que la especie presenta una reducción poblacional del 80% en un periodo de 45 años o tres generaciones, incluyendo las dos generaciones pasadas (20 años) y una futura (15 años). La especie se caracteriza por su baja capacidad de dispersión y bajo flujo genético. Su área de ocupación se ha reducido, producto de la fragmentación y pérdida de hábitat. Existen fuertes presiones en las dos principales zonas donde se distribuyen, probablemente los remanentes de poblaciones más grandes de la especie, Serranía de San Lucas y Catatumbo. Por otro lado, se ha evidenciado que la especie es aprovechada para el consumo de su carne, así como para tenencia como mascota.
 
 
 
 El estudio de @Mejia-Correa2016 registra la especie en un fragmento de bosque húmedo del municipio de Barrancabermeja, Santander, Colombia. 
  
 
-## Evaluadores:
+
+ 
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Vladimir Rojas, Cristian Cruz Rodríguez, José González-Maya, Esteban Payán, Federico Mosquera, Andrés Arias-Alzate, Andrés Link, Angélica Díaz, Felipe Suarez-Castro, Oscar E. Murillo-García, Lain E. Pardo, Mauricio Vela, María Torres Martínez, 
  
 
+### Con apoyo de:
 
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
 
 

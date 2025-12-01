@@ -105,10 +105,16 @@ Especie distribuida en pocas localidades (menor a 5) de la Amazonia; presenta un
  
 
 
-## Evaluadores:
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Sebastián Bustamente, Hugo Mantilla, Sebastián Montilla, Julio Chacón, Iván Soto, Luz Elena Rueda, Nelson Galvis, Juan David Sánchez, Andrés Link, Gabriela de Luna, Pablo Stevenson, Adriana Acero-Murcia, Alma Hernández. 
 
+
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
 
 

@@ -108,17 +108,22 @@ Se estima que la reducción es del 25%, por poco alcanza la reducción en las ú
 
 
 
-
-
-
-## Evaluadores:
+ 
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 José González-Maya, Julio Chacon-Pacheco, Angela Maldonado, Sebastián García, Angela Maldonado, Iván Soto, Francy Forero, Andrés Link, Gabriela de Luna, Xyomara Carretero, Adriana Acero-Murcia, Diana Guzmán, Juan David Sánchez.
 
 
 
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
+
 
  
+
 
 
 

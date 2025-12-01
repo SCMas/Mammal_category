@@ -107,11 +107,16 @@ La especie presenta una reducción poblacional del 30% a casua de reducción del
 
 
 
-## Evaluadores:
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Sebastián García, Alma Hernández, John Aristizabal, Lina García, Gabriela de Luna, Adriana Acero-Murcia, Xyomara Carretero, Diana Guzmán, Iván Soto, Andrés Link
 
 
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
  
 

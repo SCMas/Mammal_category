@@ -46,7 +46,7 @@ value_box(
 
 ## Foto
 
-![_Ateles belzebuth_  (Foto: Fábio Manfredini)](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Ateles_belzebuth_belzebuth.jpg/960px-Ateles_belzebuth_belzebuth.jpg)
+![_Ateles belzebuth_  Meta, Colombia (Foto: Sasha Cardenas)](/img/sp/Ateles_belzebuth.jpg)
 
 ## Mapa
 
@@ -108,11 +108,16 @@ El estudio de @Aya2020 reporta la especie en Playa Rica, La Macarena, Meta, Colo
 
  
 
-## Evaluadores:
+
+::: {layout="[[65,35]]"}
+### Evaluadores:
 
 Alma Hernández, Néstor Roncancio Duque, Francy Forero, Sebastián Bustamante, Julio Chacón, Hugo Mantilla, Sebastián García, Diana Guzmán, Natalia Atuesta, Sebastián Montilla, Luz Elena Rueda, Juan David Sánchez, Gabriela de Luna, Julián León, Xiomara Carretero, Nelson Galvis, Mónica Alejandra Ramírez, Pablo Stevenson, Adriana Acero-Murcia, Laura Abondano, Angela Maldonado, John Aristizabal. 
 
+### Con apoyo de:
 
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
 
 
 

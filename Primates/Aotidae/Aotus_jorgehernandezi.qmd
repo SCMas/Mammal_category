@@ -1,0 +1,122 @@
+---
+title: "_Aotus jorgehernandezi_"
+subtitle: "Mono nocturno de Hernández"
+date: 11/10/2025
+author: Sebastián García-Restrepo
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+google-scholar: true
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "DD",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = value_box_theme(bg = "#D1D1C6"),#, fg = "#000000"),
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+![_Aotus jorgehernandezi_ Live. Reprinted from Torres et al. 1998.  (Foto: Thomas Richard Defler)](https://www.researchgate.net/profile/Thomas-Defler-2/publication/254797416/figure/fig2/AS:392795345965061@1470661116394/Live-Aotus-jorgehernandezi-reprinted-from-Torres-et-al-1998-With-permission-from.png)
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Aotus jorgehernandezi")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        #projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        year,
+                                        identifier,
+                                        #collectionCode,
+                                        # recordedBy
+                                        ) #|> 
+  # filter(recordedBy!="NA") # remove this point
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+
+```
+
+
+
+## Justificación 
+
+Descrita en 2007. Sólo se conoce su localidad tipo y no se dispone de mas información sobre el estado de sus poblaciónes, ni sobre sus principales amenazas. La descripcion proviene de un animal en cautiverio de procedencia dudosa, la afinidad descrita es con otras especies que no aplican para Colombia.
+
+
+
+::: {layout="[[65,35]]"}
+### Evaluadores:  
+
+Alma Hernández, Julio Chacón, Sebastián García, Juan David Sánchez, Andrés Link, Néstor Roncancio, Iván Soto.
+
+
+### Con apoyo de:
+
+![](/img/LogoAPC.png){fig-align="center" width=50%}
+:::
+
+
+## Bibliografía citada 
+
+::: {#refs}
+:::
