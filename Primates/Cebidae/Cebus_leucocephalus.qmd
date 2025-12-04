@@ -2,7 +2,7 @@
 title: "_Cebus leucocephalus_"
 subtitle: "Capuchino de frente blanca del Perijá"
 date: 11/10/2025
-author: Sebastián García
+author: Sebastián García-Restrepo
 format: html
 output:
   html_document:
@@ -100,7 +100,7 @@ No hay datos de la especie en GBIF
 
 ## Justificación 
 
-Anteriormente considerado como subespecie del capuchino de frente blanca (_Cebus albifrons_), pero fue reclasificado por Mittermeier y Rylands como una especie separada en 2013. Restringidos a la serrania del Perijá. No se conoce de su biología ni poblaciones. 
+Anteriormente considerado como subespecie del capuchino de frente blanca (_Cebus albifrons_), pero fue pero fue elevada a nivel de especie a partir de análisis moleculares. La especie está restringida a la serrania del Perijá. No se conoce de su biología ni poblaciones en Colombia. 
 
 
 
@@ -108,7 +108,7 @@ Anteriormente considerado como subespecie del capuchino de frente blanca (_Cebus
 ::: {layout="[[65,35]]"}
 ### Evaluadores:
 
-Sebastián García, Alma Hernández, John Aristizabal, Lina García, Gabriela de Luna, Adriana Acero-Murcia, Xyomara Carretero, Diana Guzmán, Iván Soto, Andrés Link.
+Alma Hernández, John Aristizabal, Lina García, Gabriela de Luna, Adriana Acero-Murcia, Xyomara Carretero, Diana Guzmán, Iván Soto, Andrés Link.
 
 
 

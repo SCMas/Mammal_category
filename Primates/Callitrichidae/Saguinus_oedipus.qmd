@@ -3,7 +3,7 @@ title: "_Saguinus oedipus_"
 subtitle: "Titi cabeciblanco"
 date: 11/10/2025
 author: 
-  - Francy Forero
+  - Francy Forero-Sánchez
   - Iván Soto
 format: html
 output:
@@ -61,6 +61,8 @@ library(rgbif)
 library(sf)
 library(mapview)
 library(tidyverse)
+library(geodata)
+munimapcol <- sf::st_as_sf(gadm(country="COL", level=2, path=tempdir()))
 # Si únicamente descargará los datos de una especie ----
 species1 <- c("Saguinus oedipus")
 # Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
@@ -83,7 +85,21 @@ dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
                                         ) |> 
   filter(recordedBy!="NA") |>  # remove this point
   filter(recordedBy!="andrew172004") |> 
-  filter(recordedBy!="Marc Cronje")
+  filter(recordedBy!="Marc Cronje") |> 
+  filter(recordedBy!="Cuesta R.E.") |> 
+  filter(recordedBy!="Daniela valentina Castilla Rivero") |> 
+  filter(recordedBy!="Carlos Amaya") |> 
+  filter(recordedBy!="canteri") |> 
+  filter(recordedBy!="arlehk") |> 
+  filter(recordedBy!="Justin Walker") |>
+  filter(recordedBy!="Chris Fisher") |> 
+  filter(recordedBy!="Nicolas Betancourt") |> 
+  filter(recordedBy!="Hugo Bernal Hernández") |> 
+  filter(recordedBy!="Jeanne Benioff") |> 
+  filter(recordedBy!="María Cristina Miranda Cardona") |> 
+  filter(recordedBy!="Rick Collins") |> 
+  filter(recordedBy!="Collector(s): Albert J. Beck") |> 
+  filter(recordedBy!="Gabriel Leite")
 
 # definir CRS
 projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
@@ -93,23 +109,25 @@ sp_sf <- st_as_sf(x = dat_sp1,
                                     "decimalLatitude"),
                             crs = projlatlon)
 
-mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+sp_in_col <- unlist(st_intersects(munimapcol, sp_sf))
+
+mapview(sp_sf[sp_in_col,], zcol="acceptedScientificName", alpha = 0)
 
 ```
 
 ## Justificación
 
 
-Debido a una posible reducción de la población del 80 % o más en un lapso de 18 años (tres generaciones; 2018-2036). Este declive se debe a una combinación de factores: la persistencia de tasas anuales aceleradas de pérdida de bosques en toda la distribución de la especie, estudios que demuestran la transformacion del hábitat forestal restante para esta especie y un comercio ilegal de mascotas que persiste, representan amenazas significativas. 
+Debido a una posible reducción de la población del 80 % o más en un lapso de 18 años (tres generaciones; 2018-2036). Este declive se debe a una combinación de factores: la persistencia de tasas anuales aceleradas de pérdida de bosques seco en toda la distribución de la especie, estudios que demuestran la transformacion del hábitat restante para esta especie y un comercio ilegal de mascotas que aun persiste, representan amenazas significativas. 
 
-Recientemente fue introducido al Parque Nacional Natural Tayrona. 
+El Titi cabeciblanco fue introducido al Parque Nacional Natural Tayrona entre la década de 1970 y 1980. La especie fue registrada por el inventario de @Jimenez-Alvarado2015.
 
 
 
 ::: {layout="[[65,35]]"}
 ### Evaluadores:
 
-Francy Forero, Julio Chacón, Sebastían García, Gabriela de Luna, Iván Soto.
+Julio Chacón, Sebastían García, Gabriela de Luna, Iván Soto.
 
 
  

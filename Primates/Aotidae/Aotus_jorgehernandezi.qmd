@@ -100,7 +100,7 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ## Justificación 
 
-Descrita en 2007. Sólo se conoce su localidad tipo y no se dispone de mas información sobre el estado de sus poblaciónes, ni sobre sus principales amenazas. La descripcion proviene de un animal en cautiverio de procedencia dudosa, la afinidad descrita es con otras especies que no aplican para Colombia.
+Descrita en 2007. Sólo se conoce su localidad tipo y no se dispone de mas información sobre el estado de sus poblaciónes, ni sobre sus principales amenazas. La descripcion proviene de un animal en cautiverio de procedencia dudosa, la afinidad descrita es con otras especies que no aplican para Colombia. Este taxon fue recientemente designado como sinónimo junior de _Aotus brumbacki_.
 
 
 

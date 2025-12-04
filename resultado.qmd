@@ -1,0 +1,141 @@
+---
+title: "Resultado"
+---
+
+## Resumen del Proceso de Categorización
+
+
+La evaluación de riesgo de extinción de los mamíferos de Colombia agrupó a los mamíferos de Colombia en las categorías de la IUCN siguiendo las [directrices para la aplicación de los criterios de la lista roja de la UICN a nivel nacional](https://portals.iucn.org/library/sites/library/files/documents/RL-2012-002-Es.pdf). Las categorías se pueden resumir asi:
+
+![](img/categorias-uicn.png)
+Luego del proceso de categorizacion las 540 especies de mamíferos quedaron 24 especies en la categoría EN, 27 especies en la categoría NT, 36 en categoría VU, 4 en categoría CR y 170 en categoría DD. 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-cap: "Explore los generos y familias agrupados por su categoría"
+
+library(treemap)
+library(sunburstR)
+library(readxl)
+library(bipartiteD3)
+library(circlize)
+library(networkD3)
+library(tidyverse)
+
+Categorias_2025 <- read_excel("C:/CodigoR/Mammal_Eval/data/Categorias_finales2025_sin_sub_especie.xlsx")   |> select(c("ORDEN", "FAMILIA", "GENERO", "NOMBRE", "Eval_old", "Eval_new")) 
+
+
+# colnames(Categorias_2025)
+
+colnames(Categorias_2025) <-  c("Orden", "Familia", "Genero", "Especie", "Eval_old", "Categoria" )
+
+# format data
+data2 <- Categorias_2025 |> 
+  count(Categoria, Orden, Familia, Genero, Especie) |> 
+  filter(Categoria != "") |> 
+  mutate(path = paste(Categoria, Orden, 
+                      Familia, Genero, Especie, sep="-")) %>%
+  dplyr::select(path, n)
+
+
+# Plot
+p <- sunburst(data2, 
+              legend=FALSE,
+              count=TRUE
+              #width="100%" 
+              #height="350"
+              #height=400
+              )
+p
+
+```
+
+::: {.callout-tip icon=true}
+Puede buscar cada una de las especies en el panel de la izquierda 👈 y tambien buscar por nombres de especies, autores y palabras clave en la ventana de busqueda 🔍︎ 
+:::
+
+## Cambios en las Categorias
+
+71 especies que no habian sido evaluadas ahora cuentan con categoría. 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-cap: "Explore como cambiaron las categorías"
+#| 
+library(chorddiag)
+
+Categ_long <- as.data.frame(as.matrix (table(Categorias_2025$Eval_old, Categorias_2025$Categoria)))
+  
+#convert table to matrix
+#my_matrix <- matrix(Categ_square, ncol=ncol(Categ_square), #dimnames=dimnames(Categ_square))
+
+## set up storage matrix
+# get names for row and columns
+nameVals <- sort(unique(unlist(Categ_long[1:2])))
+# construct 0 matrix of correct dimensions with row and column names
+myMat <- matrix(0, length(nameVals), length(nameVals), dimnames = list(nameVals, nameVals))
+
+# fill in the matrix with matrix indexing on row and column names
+myMat[as.matrix(Categ_long[c("Var1", "Var2")])] <- Categ_long[["Freq"]]
+
+
+
+categ_iucn <- nameVals
+
+dimnames(myMat) <- list(Antes = categ_iucn,
+                    Ahora = categ_iucn)
+
+# Create the bipartite chord diagram
+interactive_plot2 <- chorddiag(t(myMat),
+   type = "bipartite",
+   groupColors = c("#D81E05",
+                   "#D1D1C6", 
+                   "#FC7F3F",
+                   "#60C659",
+                   "#e5e5e5",
+                   "#CCE226", 
+                   "#F9E814",
+                   "#D81E05",
+                   "#D1D1C6", 
+                   "#FC7F3F",
+                   "#60C659",
+                   "#e5e5e5",
+                   "#CCE226", 
+                   "#F9E814"),
+   groupnameFontsize = 14,
+   groupnamePadding = 27,
+   tooltipGroupConnector = "  a  ",
+   showTooltips=TRUE,
+   showZeroTooltips=FALSE
+)
+
+interactive_plot2
+```
+
+
+El proceso contó con la participacion de **5 facilitadores** y  **201 expertos** que participaron en **15 talleres** en los cuales se evaluaron **540 especies**.
+
+
+
+
+
+::: {.callout-note icon=false}
+## Conozca mas detalles sobre el proceso en esta publicación:  
+
+
+Gómez-Valencia, Bibiana, Maria P. Baptiste, Hector E. Ramírez-Chaves, Elkin A. Noguera-Urbano, Andres Felipe Suarez-Castro, María M. Torres-Martínez, Gabriel Pantoja-Peña, y Diego J. Lizcano. 2021. Avance Del Proceso De evaluación De Riesgo De extinción De Los mamíferos En Colombia. Mammalogy Notes 7 (2), 335. [doi:10.47603/mano.v7n2.335](https://doi.org/10.47603/mano.v7n2.335)<span class="__dimensions_badge_embed__" data-doi="10.47603/mano.v7n2.335" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.47603/mano.v7n2.335" data-hide-no-mentions="true" class="altmetric-embed"></div>      
+:::
+
+
+
+
+
+

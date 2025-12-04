@@ -28,6 +28,8 @@ website:
     right:
       - href: index.qmd
         text: Inicio
+      - href: resultado.qmd
+        text: Resultado
       - icon: house
         href: https://mamiferoscolombia.org
       - icon: facebook

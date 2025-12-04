@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Resultado – Categorización de los mamíferos de Colombia</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-c4abc79bd486e21ebbdfaa7032e1c667.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-5c93011375de004513365291daa02012.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-c4abc79bd486e21ebbdfaa7032e1c667.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-297VCZ49MN"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-297VCZ49MN', { 'anonymize_ip': false});
+</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<link href="site_libs/sequences-0.1/sequences.css" rel="stylesheet">
+
+<script src="site_libs/sunburst-binding-2.1.8/sunburst.js"></script>
+
+<script src="site_libs/d3-4.13.0/d3.min.js"></script>
+
+<script src="site_libs/d3-tip-0.8.1/index.js"></script>
+
+<link href="site_libs/chorddiag-0.1.2.9000/chorddiag.css" rel="stylesheet">
+
+<script src="site_libs/chorddiag-0.1.2.9000/chorddiag.js"></script>
+
+
+
+<meta property="og:title" content="Resultado – Categorización de los mamíferos de Colombia">
+<meta property="og:description" content="mamíferos | Colombia | Lista roja de mamíferos | mamíferos amenazados | mammal red list">
+<meta property="og:image" content="https://mamiferoscolombia.org/categorias/img/categorias-uicn.png">
+<meta property="og:site_name" content="Categorización de los mamíferos de Colombia">
+<meta property="og:image:height" content="713">
+<meta property="og:image:width" content="1920">
+<meta name="twitter:title" content="Resultado – Categorización de los mamíferos de Colombia">
+<meta name="twitter:description" content="mamíferos | Colombia | Lista roja de mamíferos | mamíferos amenazados | mammal red list">
+<meta name="twitter:image" content="https://mamiferoscolombia.org/categorias/img/categorias-uicn.png">
+<meta name="twitter:image-height" content="713">
+<meta name="twitter:image-width" content="1920">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Categorización de los mamíferos de Colombia</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resultado.html"> 
+<span class="menu-text">Resultado</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://mamiferoscolombia.org"> <i class="bi bi-house" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.facebook.com/SociedadColombianaMastozoologia"> <i class="bi bi-facebook" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.instagram.com/mastozoologiacolombia/"> <i class="bi bi-instagram" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/SCMas2"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dlizcano/Mammal_category"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./resultado.html">Resultado</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./img/LogoSCMas.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./img/LogoSCMas.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resultado.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Resultado</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Artiodactyla</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Cervidae</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Mazama</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Artiodactyla/Cervidae/Mazama/Mazama_murelia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Mazama murelia</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Artiodactyla/Cervidae/Mazama/Mazama_rufina.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Mazama rufina</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Artiodactyla/Cervidae/Mazama/Mazama_sanctaemartae.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Mazama sanctaemartae</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Artiodactyla/Cervidae/Mazama/Mazama_temama.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Mazama temama</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Artiodactyla/Cervidae/Mazama/Mazama_zamora.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Mazama zamora</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Artiodactyla/Cervidae/Mazama/Mazama_zetta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Mazama zetta</em></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Odocoileus</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Artiodactyla/Cervidae/Odocoileus/Odocoileus_virginianus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Odocoileus virginianus</em></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Puduella</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Artiodactyla/Cervidae/Puduella/Puduella_mephistophiles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Puduella mephistophiles</em></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">Tayassuidae</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Artiodactyla/Tayassuidae/Dicotyles_tajacu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Dicotyles tajacu</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Artiodactyla/Tayassuidae/Tayassu_pecari.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Tayassu pecari</em></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Perissodactyla</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
+ <span class="menu-text">Tapiridae</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Perissodactyla/Tapiridae/Tapirus_bairdii.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Tapirus bairdii</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Perissodactyla/Tapiridae/Tapirus_pinchaque.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Tapirus pinchaque</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Perissodactyla/Tapiridae/Tapirus_terrestris.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Tapirus terrestris</em></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">Primates</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false">
+ <span class="menu-text">Aotidae</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Aotidae/Aotus_brumbacki.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Aotus brumbacki</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Aotidae/Aotus_griseimembra.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Aotus griseimembra</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Aotidae/Aotus_jorgehernandezi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Aotus jorgehernandezi</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Aotidae/Aotus_lemurinus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Aotus lemurinus</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Aotidae/Aotus_nancymaae.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Aotus nancymaae</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Aotidae/Aotus_vociferans.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Aotus vociferans</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Aotidae/Aotus_zonalis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Aotus zonalis</em></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
+ <span class="menu-text">Atelidae</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Atelidae/Alouatta_palliata.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Alouatta palliata</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Atelidae/Alouatta_seniculus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Alouatta seniculus</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Atelidae/Ateles_belzebuth.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Ateles belzebuth</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Atelidae/Ateles_fusciceps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Ateles fusciceps</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Atelidae/Ateles_hybridus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Ateles hybridus</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Atelidae/Lagothrix_lagotricha.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Lagothrix lagothricha</em></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false">
+ <span class="menu-text">Callitrichidae</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Callitrichidae/Callimico_goeldii.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Callimico goeldii</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Callitrichidae/Cebuella_pygmaea.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Cebuella pygmaea</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Callitrichidae/Leontocebus_fuscus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Leontocebus fuscus</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Callitrichidae/Leontocebus_nigricollis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Leontocebus nigricollis</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Callitrichidae/Saguinus_geoffroyi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Saguinus geoffroyi</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Callitrichidae/Saguinus_inustus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Saguinus inustus</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Callitrichidae/Saguinus_leucopus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Saguinus leucopus</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Callitrichidae/Saguinus_oedipus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Saguinus oedipus</em></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false">
+ <span class="menu-text">Cebidae</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Cebidae/Cebus_albifrons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Cebus albifrons</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Cebidae/Cebus_capucinus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Cebus capucinus</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Cebidae/Cebus_leucocephalus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Cebus leucocephalus</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Cebidae/Cebus_malitiosus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Cebus malitiosus</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Cebidae/Cebus_versicolor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Cebus versicolor</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Cebidae/Saimiri_cassiquiarensis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Saimiri cassiquiarensis</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Cebidae/Sapajus_apella.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Sapajus apella</em></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false">
+ <span class="menu-text">Pitheciidae</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Pitheciidae/Cacajao_melanocephalus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Cacajao melanocephalus</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Pitheciidae/Cheracebus_lucifer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Cheracebus lucifer</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Pitheciidae/Cheracebus_lugens.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Cheracebus lugens</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Pitheciidae/Cheracebus_medemi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Cheracebus medemi</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Pitheciidae/Pithecia_hirsuta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Pithecia hirsuta</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Pitheciidae/Pithecia_milleri.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Pithecia milleri</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Pitheciidae/Plecturocebus_caquetensis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Plecturocebus caquetensis</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Pitheciidae/Plecturocebus_discolor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Plecturocebus discolor</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Primates/Pitheciidae/Plecturocebus_ornatus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Plecturocebus ornatus</em></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#resumen-del-proceso-de-categorización" id="toc-resumen-del-proceso-de-categorización" class="nav-link active" data-scroll-target="#resumen-del-proceso-de-categorización">Resumen del Proceso de Categorización</a></li>
+  <li><a href="#cambios-en-las-categorias" id="toc-cambios-en-las-categorias" class="nav-link" data-scroll-target="#cambios-en-las-categorias">Cambios en las Categorias</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/dlizcano/mammalcol/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="resultado.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Resultado</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="resumen-del-proceso-de-categorización" class="level2">
+<h2 class="anchored" data-anchor-id="resumen-del-proceso-de-categorización">Resumen del Proceso de Categorización</h2>
+<p>La evaluación de riesgo de extinción de los mamíferos de Colombia agrupó a los mamíferos de Colombia en las categorías de la IUCN siguiendo las <a href="https://portals.iucn.org/library/sites/library/files/documents/RL-2012-002-Es.pdf">directrices para la aplicación de los criterios de la lista roja de la UICN a nivel nacional</a>. Las categorías se pueden resumir asi:</p>
+<p><img src="img/categorias-uicn.png" class="img-fluid"> Luego del proceso de categorizacion las 540 especies de mamíferos quedaron 24 especies en la categoría EN, 27 especies en la categoría NT, 36 en categoría VU, 4 en categoría CR y 170 en categoría DD.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="sunburst html-widget html-fill-item" id="htmlwidget-4f98b320fc6d80519c76" style="width:100%;height:464px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-4f98b320fc6d80519c76">{"x":{"data":{"children":[{"name":"CR","children":[{"name":"Primates","children":[{"name":"Atelidae","children":[{"name":"Ateles","children":[{"name":"Ateles fusciceps","size":1,"colname":"X5"},{"name":"Ateles hybridus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Callitrichidae","children":[{"name":"Saguinus","children":[{"name":"Saguinus oedipus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Pitheciidae","children":[{"name":"Plecturocebus","children":[{"name":"Plecturocebus caquetensis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"}],"colname":"X1"},{"name":"DD","children":[{"name":"Artiodactyla","children":[{"name":"Cervidae","children":[{"name":"Mazama","children":[{"name":"Mazama murelia","size":1,"colname":"X5"},{"name":"Mazama sanctaemartae","size":1,"colname":"X5"},{"name":"Mazama temama","size":1,"colname":"X5"},{"name":"Mazama zamora","size":1,"colname":"X5"},{"name":"Mazama zetta","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Delphinidae","children":[{"name":"Feresa","children":[{"name":"Feresa attenuata","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Peponocephala","children":[{"name":"Peponocephala electra","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Carnivora","children":[{"name":"Felidae","children":[{"name":"Leopardus","children":[{"name":"Leopardus garleppi","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Otariidae","children":[{"name":"Arctocephalus","children":[{"name":"Arctocephalus galapagoensis","size":1,"colname":"X5"},{"name":"Arctocephalus philippii","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Otaria","children":[{"name":"Otaria flavescens","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Zalophus","children":[{"name":"Zalophus wollebaeki","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Ziphius","children":[{"name":"Arctocephalus australis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Procyonidae","children":[{"name":"Bassaricyon","children":[{"name":"Bassaricyon alleni","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Nasua","children":[{"name":"Nasua narica","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Procyon","children":[{"name":"Procyon lotor","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Cetacea","children":[{"name":"Balaenopteridae","children":[{"name":"Balaenoptera","children":[{"name":"Balaenoptera borealis","size":1,"colname":"X5"},{"name":"Balaenoptera musculus","size":1,"colname":"X5"},{"name":"Balaenoptera physalus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Delphinidae","children":[{"name":"Lagenodelphis","children":[{"name":"Lagenodelphis hosei","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Kogiidae","children":[{"name":"Kogia","children":[{"name":"Kogia sima","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Physeteridae","children":[{"name":"Kogia","children":[{"name":"Kogia breviceps","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Ziphiidae","children":[{"name":"Mesoplodon","children":[{"name":"Mesoplodon densirostris","size":1,"colname":"X5"},{"name":"Mesoplodon europaeus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Ziphius","children":[{"name":"Ziphius cavirostris","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Chiroptera","children":[{"name":"Emballonuridae","children":[{"name":"Centronycteris","children":[{"name":"Centronycteris centralis","size":1,"colname":"X5"},{"name":"Centronycteris maximiliani","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Cyttarops","children":[{"name":"Cyttarops alecto","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Diclidurus","children":[{"name":"Diclidurus albus","size":1,"colname":"X5"},{"name":"Diclidurus ingens","size":1,"colname":"X5"},{"name":"Diclidurus scutatus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Peropteryx","children":[{"name":"Peropteryx pallidoptera","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Saccopteryx","children":[{"name":"Saccopteryx antioquensis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Furipteridae","children":[{"name":"Furipterus","children":[{"name":"Furipterus horrens","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Molossidae","children":[{"name":"Cynomops","children":[{"name":"Cynomops abrasus","size":1,"colname":"X5"},{"name":"Cynomops greenhalli","size":1,"colname":"X5"},{"name":"Cynomops kuizha","size":1,"colname":"X5"},{"name":"Cynomops paranus","size":1,"colname":"X5"},{"name":"Cynomops tonkigui","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Eumops","children":[{"name":"Eumops dabbenei","size":1,"colname":"X5"},{"name":"Eumops delticus","size":1,"colname":"X5"},{"name":"Eumops hansae","size":1,"colname":"X5"},{"name":"Eumops perotis","size":1,"colname":"X5"},{"name":"Eumops trumbulli","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Molossops","children":[{"name":"Molossops neglectus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Nyctinomops","children":[{"name":"Nyctinomops aurispinosus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Promops","children":[{"name":"Promops nasutus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Mormoopidae","children":[{"name":"Pteronotus","children":[{"name":"Pteronotus davyi","size":1,"colname":"X5"},{"name":"Pteronotus fuscus","size":1,"colname":"X5"},{"name":"Pteronotus rubiginosus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Phyllostomidae","children":[{"name":"Anoura","children":[{"name":"Anoura aequatoris","size":1,"colname":"X5"},{"name":"Anoura fistulata","size":1,"colname":"X5"},{"name":"Anoura latidens","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Artibeus","children":[{"name":"Artibeus aequatorialis","size":1,"colname":"X5"},{"name":"Artibeus rosenbergi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Carollia","children":[{"name":"Carollia monohernandezi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Centurio","children":[{"name":"Centurio senex","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Chiroderma","children":[{"name":"Chiroderma gorgasi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Gardnerycteris","children":[{"name":"Gardnerycteris koepckeae","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Glossophaga","children":[{"name":"Glossophaga commissarisi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Glyphonycteris","children":[{"name":"Glyphonycteris daviesi","size":1,"colname":"X5"},{"name":"Glyphonycteris sylvestris","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Hsunycteris","children":[{"name":"Hsunycteris cadenai","size":1,"colname":"X5"},{"name":"Hsunycteris pattoni","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Lichonycteris","children":[{"name":"Lichonycteris degener","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Lonchophylla","children":[{"name":"Lonchophylla chocoana","size":1,"colname":"X5"},{"name":"Lonchophylla concava","size":1,"colname":"X5"},{"name":"Lonchophylla fornicata","size":1,"colname":"X5"},{"name":"Lonchophylla handleyi","size":1,"colname":"X5"},{"name":"Lonchophylla orienticollina","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Lonchorhina","children":[{"name":"Lonchorhina mankomara","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Lophostoma","children":[{"name":"Lophostoma carrikeri","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Mimon","children":[{"name":"Mimon bennettii","size":1,"colname":"X5"},{"name":"Mimon cozumelae","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Phylloderma","children":[{"name":"Phylloderma stenops","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Phyllostomus","children":[{"name":"Phyllostomus latifolius","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Platyrrhinus","children":[{"name":"Platyrrhinus angustirostris","size":1,"colname":"X5"},{"name":"Platyrrhinus incarum","size":1,"colname":"X5"},{"name":"Platyrrhinus ismaeli","size":1,"colname":"X5"},{"name":"Platyrrhinus nitelinea","size":1,"colname":"X5"},{"name":"Platyrrhinus umbratus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Sturnira","children":[{"name":"Sturnira bakeri","size":1,"colname":"X5"},{"name":"Sturnira giannae","size":1,"colname":"X5"},{"name":"Sturnira koopmanhilli","size":1,"colname":"X5"},{"name":"Sturnira mistratensis","size":1,"colname":"X5"},{"name":"Sturnira parvidens","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Vampyressa","children":[{"name":"Vampyressa melissa","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Vampyriscus","children":[{"name":"Vampyriscus brocki","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Thyropteridae","children":[{"name":"Thyroptera","children":[{"name":"Thyroptera devivoi","size":1,"colname":"X5"},{"name":"Thyroptera lavali","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Vespertilionidae","children":[{"name":"Eptesicus","children":[{"name":"Eptesicus andinus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Histiotus","children":[{"name":"Histiotus cadenai","size":1,"colname":"X5"},{"name":"Histiotus colombiae","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Myotis","children":[{"name":"Myotis caucensis","size":1,"colname":"X5"},{"name":"Myotis diminutus","size":1,"colname":"X5"},{"name":"Myotis larensis","size":1,"colname":"X5"},{"name":"Myotis oxyotus","size":1,"colname":"X5"},{"name":"Myotis simus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Didelphimorphia","children":[{"name":"Didelphidae","children":[{"name":"Caluromysiops","children":[{"name":"Caluromysiops irrupta","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Didelphis","children":[{"name":"Didelphis imperfecta","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Gracilinanus","children":[{"name":"Gracilinanus emiliae","size":1,"colname":"X5"},{"name":"Gracilinanus marica","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Marmosa","children":[{"name":"Marmosa alstoni","size":1,"colname":"X5"},{"name":"Marmosa germana","size":1,"colname":"X5"},{"name":"Marmosa jansae","size":1,"colname":"X5"},{"name":"Marmosa rubra","size":1,"colname":"X5"},{"name":"Marmosa rutteri","size":1,"colname":"X5"},{"name":"Marmosa zeledoni","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Marmosops","children":[{"name":"Marmosops bishopi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Monodelphis","children":[{"name":"Monodelphis melanops","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Soricidae","children":[{"name":"Cryptotis","children":[{"name":"Cryptotis brachyonyx","size":1,"colname":"X5"},{"name":"Cryptotis perijensis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Eulipotyphla","children":[{"name":"Soricidae","children":[{"name":"Cryptotis","children":[{"name":"Cryptotis niausa","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Lagomorpha","children":[{"name":"Leporidae","children":[{"name":"Sylvilagus","children":[{"name":"Sylvilagus apollinaris","size":1,"colname":"X5"},{"name":"Sylvilagus floridanus","size":1,"colname":"X5"},{"name":"Sylvilagus fulvescens","size":1,"colname":"X5"},{"name":"Sylvilagus nicefori","size":1,"colname":"X5"},{"name":"Sylvilagus salentus","size":1,"colname":"X5"},{"name":"Sylvilagus sanctaemartae","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Paucituberculata","children":[{"name":"Caenolestidae","children":[{"name":"Caenolestes","children":[{"name":"Caenolestes fuliginosus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Pilosa","children":[{"name":"Cyclopedidae","children":[{"name":"Cyclopes","children":[{"name":"Cyclopes dorsalis","size":1,"colname":"X5"},{"name":"Cyclopes ida","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Primates","children":[{"name":"Callitrichidae","children":[{"name":"Callimico","children":[{"name":"Callimico goeldii","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Cebidae","children":[{"name":"Aotus","children":[{"name":"Aotus jorgehernandezi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Cebus","children":[{"name":"Cebus leucocephalus","size":1,"colname":"X5"},{"name":"Cebus malitiosus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Rodentia","children":[{"name":"Cricetidae","children":[{"name":"Chibchanomys","children":[{"name":"Chibchanomys trichotis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Chilomys","children":[{"name":"Chilomys fumeus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Isthmomys","children":[{"name":"Isthmomys pirrensis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Melanomys","children":[{"name":"Melanomys columbianus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Neacomys","children":[{"name":"Neacomys serranensis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Necromys","children":[{"name":"Necromys punctulatus","size":1,"colname":"X5"},{"name":"Necromys urichi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Nectomys","children":[{"name":"Nectomys apicalis","size":1,"colname":"X5"},{"name":"Nectomys grandis","size":1,"colname":"X5"},{"name":"Nectomys magdalenae","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Nephelomys","children":[{"name":"Nephelomys maculiventer","size":1,"colname":"X5"},{"name":"Nephelomys nimbosus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Neusticomys","children":[{"name":"Neusticomys mussoi","size":1,"colname":"X5"},{"name":"Neusticomys vossi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Oecomys","children":[{"name":"Oecomys speciosus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Oryzomyz","children":[{"name":"Oryzomys gorgasi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Rhipidomys","children":[{"name":"Rhipidomys couesi","size":1,"colname":"X5"},{"name":"Rhipidomys similis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Thomasomys","children":[{"name":"Thomasomys bombycinus","size":1,"colname":"X5"},{"name":"Thomasomys contradictus","size":1,"colname":"X5"},{"name":"Thomasomys dispar","size":1,"colname":"X5"},{"name":"Thomasomys nicefori","size":1,"colname":"X5"},{"name":"Thomasomys paramorum","size":1,"colname":"X5"},{"name":"Thomasomys popayanus","size":1,"colname":"X5"},{"name":"Thomasomys princeps","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Echimyidae","children":[{"name":"Diplomys","children":[{"name":"Diplomys caniceps","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Isothrix","children":[{"name":"Isothrix bistriata","size":1,"colname":"X5"},{"name":"Isothrix negrensis","size":1,"colname":"X5"},{"name":"Isothrix orinoci","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Olallamys","children":[{"name":"Olallamys albicaudus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Proechimys","children":[{"name":"Proechimys chrysaeolus","size":1,"colname":"X5"},{"name":"Proechimys oconnelli","size":1,"colname":"X5"},{"name":"Proechimys simonsi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Santamartamys","children":[{"name":"Santamartamys rufodorsalis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Toromys","children":[{"name":"Toromys rhipidurus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Erethizontidae","children":[{"name":"Coendou","children":[{"name":"Coendou ichillus","size":1,"colname":"X5"},{"name":"Coendou quichua","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Geomyidae","children":[{"name":"Orthogeomys","children":[{"name":"Orthogeomys dariensis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Sciuridae","children":[{"name":"Leptosciurus","children":[{"name":"Leptosciurus isthmius","size":1,"colname":"X5"},{"name":"Leptosciurus mimulus","size":1,"colname":"X5"},{"name":"Leptosciurus otinus","size":1,"colname":"X5"},{"name":"Leptosciurus santanderensis","size":1,"colname":"X5"},{"name":"Leptosciurus similis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Microsciurus","children":[{"name":"Microsciurus santanderensis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Syntheosciurus","children":[{"name":"Syntheosciurus granatensis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"}],"colname":"X1"},{"name":"EN","children":[{"name":"Artiodactyla","children":[{"name":"Cervidae","children":[{"name":"Pudu","children":[{"name":"Pudu mephistophiles","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Tayassuidae","children":[{"name":"Tayassu","children":[{"name":"Tayassu pecari","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Carnivora","children":[{"name":"Mustelidae","children":[{"name":"Pteronura","children":[{"name":"Pteronura brasiliensis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Cetacea","children":[{"name":"Delphinidae","children":[{"name":"Sotalia","children":[{"name":"Sotalia fluviatilis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Iniidae","children":[{"name":"Inia","children":[{"name":"Inia geoffrensis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Chiroptera","children":[{"name":"Molossidae","children":[{"name":"Neoplatymops","children":[{"name":"Neoplatymops mattogrossensis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Natalidae","children":[{"name":"Chilonatalus","children":[{"name":"Chilonatalus micropus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Natalus","children":[{"name":"Natalus mexicanus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Didelphimorphia","children":[{"name":"Didelphidae","children":[{"name":"Gracilinanus","children":[{"name":"Gracilinanus dryas","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Marmosa","children":[{"name":"Marmosa xerophila","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Marmosops","children":[{"name":"Marmosops handleyi","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Eulipotyphla","children":[{"name":"Soricidae","children":[{"name":"Cryptotis","children":[{"name":"Cryptotis medellinius","size":1,"colname":"X5"},{"name":"Cryptotis squamipes","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Perissodactyla","children":[{"name":"Tapiridae","children":[{"name":"Tapirus","children":[{"name":"Tapirus bairdii","size":1,"colname":"X5"},{"name":"Tapirus pinchaque","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Primates","children":[{"name":"Aotidae","children":[{"name":"Aotus","children":[{"name":"Aotus nancymaae","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Atelidae","children":[{"name":"Ateles","children":[{"name":"Ateles belzebuth","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Cebidae","children":[{"name":"Cebus","children":[{"name":"Cebus versicolor","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Rodentia","children":[{"name":"Cricetidae","children":[{"name":"Anotomys","children":[{"name":"Anotomys leander","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Thomasomys","children":[{"name":"Thomasomys hylophilus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Echimyidae","children":[{"name":"Proechimys","children":[{"name":"Proechimys mincae","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Erethizontidae","children":[{"name":"Coendou","children":[{"name":"Coendou vestitus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Sirenia","children":[{"name":"Trichechidae","children":[{"name":"Trichechus","children":[{"name":"Trichechus inunguis","size":1,"colname":"X5"},{"name":"Trichechus manatus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"}],"colname":"X1"},{"name":"LC","children":[{"name":"Artiodactyla","children":[{"name":"Tayassuidae","children":[{"name":"Dicotyles","children":[{"name":"Dicotyles tajacu","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Carnivora","children":[{"name":"Canidae","children":[{"name":"Cerdocyon","children":[{"name":"Cerdocyon thous","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Felidae","children":[{"name":"Herpailurus","children":[{"name":"Herpailurus yagouaroundi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Leopardus","children":[{"name":"Leopardus pardalis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Puma","children":[{"name":"Puma concolor","size":1,"colname":"X5"},{"name":"Puma yagouaroundi","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Mephitidae","children":[{"name":"Conepatus","children":[{"name":"Conepatus semistriatus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Mustelidae","children":[{"name":"Eira","children":[{"name":"Eira barbara","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Galictis","children":[{"name":"Galictis vittata","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Mustela","children":[{"name":"Mustela frenata","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Neogale","children":[{"name":"Neogale frenata","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Procyonidae","children":[{"name":"Bassaricyon","children":[{"name":"Bassaricyon medius","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Nasua","children":[{"name":"Nasua nasua","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Potos","children":[{"name":"Potos flavus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Procyon","children":[{"name":"Procyon cancrivorus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Cetacea","children":[{"name":"Balaenopteridae","children":[{"name":"Balaenoptera","children":[{"name":"Balaenoptera acutorostrata","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Delphinidae","children":[{"name":"Delphinus","children":[{"name":"Delphinus delphis capensis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Globicephala","children":[{"name":"Globicephala macrorhynchus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Grampus","children":[{"name":"Grampus griseus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Orcinus","children":[{"name":"Orcinus orca","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Stenella ","children":[{"name":"Stenella attenuata","size":1,"colname":"X5"},{"name":"Stenella coeruleoalba","size":1,"colname":"X5"},{"name":"Stenella frontalis","size":1,"colname":"X5"},{"name":"Stenella longirostris","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Steno","children":[{"name":"Steno bredanensis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Chiroptera","children":[{"name":"Emballonuridae","children":[{"name":"Balantiopteryx","children":[{"name":"Balantiopteryx infusca","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Cormura","children":[{"name":"Cormura brevirostris","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Peropteryx","children":[{"name":"Peropteryx kappleri","size":1,"colname":"X5"},{"name":"Peropteryx leucoptera","size":1,"colname":"X5"},{"name":"Peropteryx macrotis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Rhynchonycteris","children":[{"name":"Rhynchonycteris naso","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Saccopteryx","children":[{"name":"Saccopteryx bilineata","size":1,"colname":"X5"},{"name":"Saccopteryx canescens","size":1,"colname":"X5"},{"name":"Saccopteryx leptura","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Molossidae","children":[{"name":"Cynomops","children":[{"name":"Cynomops planirostris","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Eumops","children":[{"name":"Eumops auripendulus","size":1,"colname":"X5"},{"name":"Eumops glaucinus","size":1,"colname":"X5"},{"name":"Eumops nanus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Molossops","children":[{"name":"Molossops temminckii","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Molossus","children":[{"name":"Molossus bondae","size":1,"colname":"X5"},{"name":"Molossus coibensis","size":1,"colname":"X5"},{"name":"Molossus molossus","size":1,"colname":"X5"},{"name":"Molossus pretiosus","size":1,"colname":"X5"},{"name":"Molossus rufus","size":1,"colname":"X5"},{"name":"Molossus sinaloae","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Nyctinomops","children":[{"name":"Nyctinomops laticaudatus","size":1,"colname":"X5"},{"name":"Nyctinomops macrotis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Promops","children":[{"name":"Promops centralis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Tadarida","children":[{"name":"Tadarida brasiliensis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Mormoopidae","children":[{"name":"Mormoops","children":[{"name":"Mormoops megalophylla","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Pteronotus","children":[{"name":"Pteronotus gymnonotus","size":1,"colname":"X5"},{"name":"Pteronotus personatus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Natalidae","children":[{"name":"Natalus","children":[{"name":"Natalus tumidirostris","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Noctilionidae","children":[{"name":"Noctilio","children":[{"name":"Noctilio albiventris","size":1,"colname":"X5"},{"name":"Noctilio leporinus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Phyllostomidae","children":[{"name":"Anoura","children":[{"name":"Anoura cadenai","size":1,"colname":"X5"},{"name":"Anoura caudifer","size":1,"colname":"X5"},{"name":"Anoura cultrata","size":1,"colname":"X5"},{"name":"Anoura geoffroyi","size":1,"colname":"X5"},{"name":"Anoura luismanueli","size":1,"colname":"X5"},{"name":"Anoura peruana","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Artibeus","children":[{"name":"Artibeus amplus","size":1,"colname":"X5"},{"name":"Artibeus anderseni","size":1,"colname":"X5"},{"name":"Artibeus bogotensis","size":1,"colname":"X5"},{"name":"Artibeus concolor","size":1,"colname":"X5"},{"name":"Artibeus glaucus","size":1,"colname":"X5"},{"name":"Artibeus gnomus","size":1,"colname":"X5"},{"name":"Artibeus lituratus","size":1,"colname":"X5"},{"name":"Artibeus obscurus","size":1,"colname":"X5"},{"name":"Artibeus phaeotis","size":1,"colname":"X5"},{"name":"Artibeus planirostris","size":1,"colname":"X5"},{"name":"Artibeus ravus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Carollia","children":[{"name":"Carollia brevicauda","size":1,"colname":"X5"},{"name":"Carollia castanea","size":1,"colname":"X5"},{"name":"Carollia perspicillata","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Chiroderma","children":[{"name":"Chiroderma salvini","size":1,"colname":"X5"},{"name":"Chiroderma trinitatum","size":1,"colname":"X5"},{"name":"Chiroderma villosum","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Choeroniscus","children":[{"name":"Choeroniscus godmani","size":1,"colname":"X5"},{"name":"Choeroniscus minor","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Chrotopterus","children":[{"name":"Chrotopterus auritus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Desmodus","children":[{"name":"Desmodus rotundus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Diaemus","children":[{"name":"Diaemus youngi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Diphylla","children":[{"name":"Diphylla ecaudata","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Enchisthenes","children":[{"name":"Enchisthenes hartii","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Gardnerycteris","children":[{"name":"Gardnerycteris crenulatum","size":1,"colname":"X5"},{"name":"Gardnerycteris keenani","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Glossophaga","children":[{"name":"Glossophaga longirostris","size":1,"colname":"X5"},{"name":"Glossophaga soricina","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Hsunycteris","children":[{"name":"Hsunycteris thomasi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Lampronycteris","children":[{"name":"Lampronycteris brachyotis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Lichonycteris","children":[{"name":"Lichonycteris obscura","size":1,"colname":"X5"},{"name":"Lionycteris spurrelli","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Lonchophylla","children":[{"name":"Lonchophylla robusta","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Lonchorhina","children":[{"name":"Lonchorhina aurita","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Lophostoma","children":[{"name":"Lophostoma brasiliense","size":1,"colname":"X5"},{"name":"Lophostoma silvicolum","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Macrophyllum","children":[{"name":"Macrophyllum macrophyllum","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Mesophylla","children":[{"name":"Mesophylla macconnelli","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Micronycteris","children":[{"name":"Micronycteris hirsuta","size":1,"colname":"X5"},{"name":"Micronycteris megalotis","size":1,"colname":"X5"},{"name":"Micronycteris microtis","size":1,"colname":"X5"},{"name":"Micronycteris minuta","size":1,"colname":"X5"},{"name":"Micronycteris schmidtorum","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Phyllostomus","children":[{"name":"Phyllostomus discolor","size":1,"colname":"X5"},{"name":"Phyllostomus elongatus","size":1,"colname":"X5"},{"name":"Phyllostomus hastatus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Platyrrhinus","children":[{"name":"Platyrrhinus albericoi","size":1,"colname":"X5"},{"name":"Platyrrhinus brachycephalus","size":1,"colname":"X5"},{"name":"Platyrrhinus dorsalis","size":1,"colname":"X5"},{"name":"Platyrrhinus helleri","size":1,"colname":"X5"},{"name":"Platyrrhinus infuscus","size":1,"colname":"X5"},{"name":"Platyrrhinus vittatus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Rhinophylla","children":[{"name":"Rhinophylla alethina","size":1,"colname":"X5"},{"name":"Rhinophylla fischerae","size":1,"colname":"X5"},{"name":"Rhinophylla pumilio","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Sphaeronycteris","children":[{"name":"Sphaeronycteris toxophyllum","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Sturnira","children":[{"name":"Sturnira bidens","size":1,"colname":"X5"},{"name":"Sturnira bogotensis","size":1,"colname":"X5"},{"name":"Sturnira erythromos","size":1,"colname":"X5"},{"name":"Sturnira ludovici","size":1,"colname":"X5"},{"name":"Sturnira luisi","size":1,"colname":"X5"},{"name":"Sturnira magna","size":1,"colname":"X5"},{"name":"Sturnira tildae","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Tonatia","children":[{"name":"Tonatia bakeri","size":1,"colname":"X5"},{"name":"Tonatia maresi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Trachops","children":[{"name":"Trachops cirrhosus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Trinycteris","children":[{"name":"Trinycteris nicefori","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Uroderma","children":[{"name":"Uroderma bakeri","size":1,"colname":"X5"},{"name":"Uroderma bilobatum","size":1,"colname":"X5"},{"name":"Uroderma convexum","size":1,"colname":"X5"},{"name":"Uroderma magnirostrum","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Vampyressa","children":[{"name":"Vampyressa thyone","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Vampyriscus","children":[{"name":"Vampyriscus bidens","size":1,"colname":"X5"},{"name":"Vampyriscus nymphaea","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Vampyrodes","children":[{"name":"Vampyrodes caraccioli","size":1,"colname":"X5"},{"name":"Vampyrodes major","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Vampyrum","children":[{"name":"Vampyrum spectrum","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Thyropteridae","children":[{"name":"Thyroptera","children":[{"name":"Thyroptera discifera","size":1,"colname":"X5"},{"name":"Thyroptera tricolor","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Vespertilionidae","children":[{"name":"Eptesicus","children":[{"name":"Eptesicus brasiliensis","size":1,"colname":"X5"},{"name":"Eptesicus chiriquinus","size":1,"colname":"X5"},{"name":"Eptesicus furinalis","size":1,"colname":"X5"},{"name":"Eptesicus fuscus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Histiotus","children":[{"name":"Histiotus humboldti","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Lasiurus","children":[{"name":"Lasiurus blossevillii","size":1,"colname":"X5"},{"name":"Lasiurus cinereus","size":1,"colname":"X5"},{"name":"Lasiurus ega","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Myotis","children":[{"name":"Myotis albescens","size":1,"colname":"X5"},{"name":"Myotis keaysi","size":1,"colname":"X5"},{"name":"Myotis nigricans","size":1,"colname":"X5"},{"name":"Myotis pilosatibialis","size":1,"colname":"X5"},{"name":"Myotis riparius","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Rhogeessa","children":[{"name":"Rhogeessa io","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Cingulata","children":[{"name":"Dasypodidae","children":[{"name":"Dasypus","children":[{"name":"Dasypus novemcinctus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Didelphimorphia","children":[{"name":"Didelphidae","children":[{"name":"Caluromys","children":[{"name":"Caluromys derbianus","size":1,"colname":"X5"},{"name":"Caluromys lanatus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Chironectes","children":[{"name":"Chironectes minimus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Didelphis","children":[{"name":"Didelphis marsupialis","size":1,"colname":"X5"},{"name":"Didelphis pernigra","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Glironia","children":[{"name":"Glironia venusta","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Lutreolina","children":[{"name":"Lutreolina crassicaudata","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Marmosa","children":[{"name":"Marmosa isthmica","size":1,"colname":"X5"},{"name":"Marmosa lepida","size":1,"colname":"X5"},{"name":"Marmosa meridae","size":1,"colname":"X5"},{"name":"Marmosa phaea","size":1,"colname":"X5"},{"name":"Marmosa robinsoni","size":1,"colname":"X5"},{"name":"Marmosa waterhousei","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Marmosops","children":[{"name":"Marmosops caucae","size":1,"colname":"X5"},{"name":"Marmosops chucha","size":1,"colname":"X5"},{"name":"Marmosops magdalenae","size":1,"colname":"X5"},{"name":"Marmosops noctivagus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Metachirus","children":[{"name":"Metachirus myosuros","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Monodelphis","children":[{"name":"Monodelphis adusta","size":1,"colname":"X5"},{"name":"Monodelphis brevicaudata","size":1,"colname":"X5"},{"name":"Monodelphis palliolata","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Philander","children":[{"name":"Philander andersoni","size":1,"colname":"X5"},{"name":"Philander canus","size":1,"colname":"X5"},{"name":"Philander melanurus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Soricidae","children":[{"name":"Cryptotis","children":[{"name":"Cryptotis tamensis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Eulipotyphla","children":[{"name":"Soricidae","children":[{"name":"Cryptotis","children":[{"name":"Cryptotis colombianus","size":1,"colname":"X5"},{"name":"Cryptotis thomasi","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Pilosa","children":[{"name":"Megalonychidae","children":[{"name":"Choloepus","children":[{"name":"Choloepus didactylus","size":1,"colname":"X5"},{"name":"Choloepus hoffmanni","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Myrmecophagidae","children":[{"name":"Tamandua","children":[{"name":"Tamandua mexicana","size":1,"colname":"X5"},{"name":"Tamandua tetradactyla","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Primates","children":[{"name":"Callitrichidae","children":[{"name":"Leontocebus","children":[{"name":"Leontocebus fuscus","size":1,"colname":"X5"},{"name":"Leontocebus nigricollis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Saguinus","children":[{"name":"Saguinus inustus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Cebidae","children":[{"name":"Saimiri","children":[{"name":"Saimiri cassiquiarensis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Sapajus","children":[{"name":"Sapajus apella","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Rodentia","children":[{"name":"Caviidae","children":[{"name":"Cavia","children":[{"name":"Cavia aperea","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Hydrochoerus","children":[{"name":"Hydrochoerus hydrochaeris","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Cricetidae","children":[{"name":"Akodon","children":[{"name":"Akodon affinis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Calomys","children":[{"name":"Calomys hummelincki","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Chilomys","children":[{"name":"Chilomys instans","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Euryoryzomys","children":[{"name":"Euryoryzomys macconnelli","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Handleyomys","children":[{"name":"Handleyomys alfaroi","size":1,"colname":"X5"},{"name":"Handleyomys fuscatus","size":1,"colname":"X5"},{"name":"Handleyomys intectus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Holochilus","children":[{"name":"Holochilus sciureus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Hylaeamys","children":[{"name":"Hylaeamys perenensis","size":1,"colname":"X5"},{"name":"Hylaeamys yunganus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Ichthyomys","children":[{"name":"Ichthyomys hydrobates","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Melanomys","children":[{"name":"Melanomys caliginosus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Microryzomys","children":[{"name":"Microryzomys altissimus","size":1,"colname":"X5"},{"name":"Microryzomys minutus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Neacomys","children":[{"name":"Neacomys spinosus","size":1,"colname":"X5"},{"name":"Neacomys tenuipes","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Nectomys","children":[{"name":"Nectomys rattus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Neomicroxus","children":[{"name":"Neomicroxus bogotensis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Nephelomys","children":[{"name":"Nephelomys childi","size":1,"colname":"X5"},{"name":"Nephelomys meridensis","size":1,"colname":"X5"},{"name":"Nephelomys pectoralis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Neusticomys","children":[{"name":"Neusticomys monticolus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Oecomys","children":[{"name":"Oecomys bicolor","size":1,"colname":"X5"},{"name":"Oecomys concolor","size":1,"colname":"X5"},{"name":"Oecomys flavicans","size":1,"colname":"X5"},{"name":"Oecomys roberti","size":1,"colname":"X5"},{"name":"Oecomys superans","size":1,"colname":"X5"},{"name":"Oecomys trinitatis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Oligoryzomys","children":[{"name":"Oligoryzomys delicatus","size":1,"colname":"X5"},{"name":"Oligoryzomys destructor","size":1,"colname":"X5"},{"name":"Oligoryzomys griseolus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Oryzomys","children":[{"name":"Oryzomys couesi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Reithrodontomys","children":[{"name":"Reithrodontomys mexicanus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Rhipidomys","children":[{"name":"Rhipidomys caucensis","size":1,"colname":"X5"},{"name":"Rhipidomys fulviventer","size":1,"colname":"X5"},{"name":"Rhipidomys latimanus","size":1,"colname":"X5"},{"name":"Rhipidomys leucodactylus","size":1,"colname":"X5"},{"name":"Rhipidomys venezuelae","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Scolomys","children":[{"name":"Scolomys ucayalensis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Sigmodon","children":[{"name":"Sigmodon alstoni","size":1,"colname":"X5"},{"name":"Sigmodon hirsutus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Sigmodontomys","children":[{"name":"Sigmodontomys alfari","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Thomasomys","children":[{"name":"Thomasomys aureus","size":1,"colname":"X5"},{"name":"Thomasomys baeops","size":1,"colname":"X5"},{"name":"Thomasomys cinereiventer","size":1,"colname":"X5"},{"name":"Thomasomys cinnameus","size":1,"colname":"X5"},{"name":"Thomasomys laniger","size":1,"colname":"X5"},{"name":"Thomasomys niveipes","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Transandinomys","children":[{"name":"Transandinomys bolivaris","size":1,"colname":"X5"},{"name":"Transandinomys talamancae","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Tylomys","children":[{"name":"Tylomys mirae","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Zygodontomys","children":[{"name":"Zygodontomys brevicauda","size":1,"colname":"X5"},{"name":"Zygodontomys brunneus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Cuniculidae","children":[{"name":"Cuniculus","children":[{"name":"Cuniculus paca","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Dasyproctidae","children":[{"name":"Dasyprocta","children":[{"name":"Dasyprocta fuliginosa","size":1,"colname":"X5"},{"name":"Dasyprocta punctata","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Myoprocta","children":[{"name":"Myoprocta acouchy","size":1,"colname":"X5"},{"name":"Myoprocta pratti","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Echimyidae","children":[{"name":"Dactylomys","children":[{"name":"Dactylomys dactylinus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Diplomys","children":[{"name":"Diplomys labilis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Hoplomys","children":[{"name":"Hoplomys gymnurus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Makalata","children":[{"name":"Makalata macrura","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Mesomys","children":[{"name":"Mesomys hispidus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Pattonomys","children":[{"name":"Pattonomys semivillosus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Proechimys","children":[{"name":"Proechimys brevicauda","size":1,"colname":"X5"},{"name":"Proechimys canicollis","size":1,"colname":"X5"},{"name":"Proechimys guairae","size":1,"colname":"X5"},{"name":"Proechimys quadruplicatus","size":1,"colname":"X5"},{"name":"Proechimys semispinosus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Erethizontidae","children":[{"name":"Coendou","children":[{"name":"Coendou prehensilis","size":1,"colname":"X5"},{"name":"Coendou pruinosus","size":1,"colname":"X5"},{"name":"Coendou rufescens","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Heteromyidae","children":[{"name":"Heteromys","children":[{"name":"Heteromys anomalus","size":1,"colname":"X5"},{"name":"Heteromys australis","size":1,"colname":"X5"},{"name":"Heteromys desmarestianus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Sciuridae","children":[{"name":"Guerlinguetus","children":[{"name":"Guerlinguetus aestuans","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Hadrosciurus","children":[{"name":"Hadrosciurus igniventris","size":1,"colname":"X5"},{"name":"Hadrosciurus spadiceus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Leptosciurus","children":[{"name":"Leptosciurus pucheranii","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Microsciurus","children":[{"name":"Microsciurus flaviventer","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Sciurillus","children":[{"name":"Sciurillus pusillus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"}],"colname":"X1"},{"name":"NT","children":[{"name":"Carnivora","children":[{"name":"Canidae","children":[{"name":"Atelocynus","children":[{"name":"Atelocynus microtis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Speothos","children":[{"name":"Speothos venaticus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Urocyon","children":[{"name":"Urocyon cinereoargenteus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Felidae","children":[{"name":"Leopardus","children":[{"name":"Leopardus wiedii","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Procyonidae","children":[{"name":"Nasuella","children":[{"name":"Nasuella olivacea","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Cetacea","children":[{"name":"Balaenopteridae","children":[{"name":"Balaenoptera","children":[{"name":"Balaenoptera edeni","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Megaptera","children":[{"name":"Megaptera novaeangliae","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Delphinidae","children":[{"name":"Pseudorca","children":[{"name":"Pseudorca crassidens","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Tursiops","children":[{"name":"Tursiops truncatus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Physeteridae","children":[{"name":"Physeter","children":[{"name":"Physeter macrocephalus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Chiroptera","children":[{"name":"Phyllostomidae","children":[{"name":"Artibeus","children":[{"name":"Artibeus jamaicensis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Choeroniscus","children":[{"name":"Choeroniscus periosus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Lophostoma","children":[{"name":"Lophostoma occidentalis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Sturnira","children":[{"name":"Sturnira aratathomasi","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Vespertilionidae","children":[{"name":"Rhogeessa","children":[{"name":"Rhogeessa minutilla","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Cingulata","children":[{"name":"Chlamyphoridae","children":[{"name":"Cabassous","children":[{"name":"Cabassous centralis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Dasypodidae","children":[{"name":"Dasypus","children":[{"name":"Dasypus pastasae","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Pilosa","children":[{"name":"Bradypodidae","children":[{"name":"Bradypus","children":[{"name":"Bradypus variegatus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Primates","children":[{"name":"Aotidae","children":[{"name":"Aotus","children":[{"name":"Aotus zonalis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Atelidae","children":[{"name":"Alouatta","children":[{"name":"Alouatta seniculus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Callitrichidae","children":[{"name":"Saguinus","children":[{"name":"Saguinus geoffroyi","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Cebidae","children":[{"name":"Aotus","children":[{"name":"Aotus vociferans","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Cebus","children":[{"name":"Cebus albifrons","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Pitheciidae","children":[{"name":"Cacajao","children":[{"name":"Cacajao melanocephalus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Cheracebus","children":[{"name":"Cheracebus lugens","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Pithecia","children":[{"name":"Pithecia hirsuta","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Rodentia","children":[{"name":"Cuniculidae","children":[{"name":"Cuniculus","children":[{"name":"Cuniculus taczanowskii","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"}],"colname":"X1"},{"name":"VU","children":[{"name":"Artiodactyla","children":[{"name":"Cervidae","children":[{"name":"Mazama","children":[{"name":"Mazama rufina","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Carnivora","children":[{"name":"Canidae","children":[{"name":"Lycalopex","children":[{"name":"Lycalopex culpaeus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Felidae","children":[{"name":"Leopardus","children":[{"name":"Leopardus tigrinus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Panthera","children":[{"name":"Panthera onca","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Mustelidae","children":[{"name":"Lontra","children":[{"name":"Lontra longicaudis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Neogale","children":[{"name":"Neogale felipei","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Procyonidae","children":[{"name":"Bassaricyon","children":[{"name":"Bassaricyon neblina","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Ursidae","children":[{"name":"Tremarctos","children":[{"name":"Tremarctos ornatus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Cetacea","children":[{"name":"Delphinidae","children":[{"name":"Sotalia","children":[{"name":"Sotalia guianensis","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Chiroptera","children":[{"name":"Phyllostomidae","children":[{"name":"Leptonycteris","children":[{"name":"Leptonycteris curasoae","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Lonchorhina","children":[{"name":"Lonchorhina marinkellei","size":1,"colname":"X5"},{"name":"Lonchorhina orinocensis","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Vampyressa","children":[{"name":"Vampyressa sinchi","size":1,"colname":"X5"},{"name":"Vampyressa voraginae","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Cingulata","children":[{"name":"Chlamyphoridae","children":[{"name":"Cabassous","children":[{"name":"Cabassous unicinctus","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Priodontes","children":[{"name":"Priodontes maximus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Dasypodidae","children":[{"name":"Dasypus","children":[{"name":"Dasypus sabanicola","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Paucituberculata","children":[{"name":"Caenolestidae","children":[{"name":"Caenolestes","children":[{"name":"Caenolestes convelatus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Perissodactyla","children":[{"name":"Tapiridae","children":[{"name":"Tapirus","children":[{"name":"Tapirus terrestris","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Pilosa","children":[{"name":"Myrmecophagidae","children":[{"name":"Myrmecophaga","children":[{"name":"Myrmecophaga tridactyla","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Primates","children":[{"name":"Aotidae","children":[{"name":"Aotus","children":[{"name":"Aotus brumbacki","size":1,"colname":"X5"},{"name":"Aotus griseimembra","size":1,"colname":"X5"},{"name":"Aotus lemurinus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Atelidae","children":[{"name":"Alouatta","children":[{"name":"Alouatta palliata","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Lagothrix","children":[{"name":"Lagothrix lagotricha","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Callitrichidae","children":[{"name":"Cebuella","children":[{"name":"Cebuella pygmaea","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Saguinus","children":[{"name":"Saguinus leucopus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Cebidae","children":[{"name":"Cebus","children":[{"name":"Cebus capucinus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Pitheciidae","children":[{"name":"Cheracebus","children":[{"name":"Cheracebus lucifer","size":1,"colname":"X5"},{"name":"Cheracebus medemi","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Pithecia","children":[{"name":"Pithecia milleri","size":1,"colname":"X5"}],"colname":"X4"},{"name":"Plecturocebus","children":[{"name":"Plecturocebus discolor","size":1,"colname":"X5"},{"name":"Plecturocebus ornatus","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Rodentia","children":[{"name":"Caviidae","children":[{"name":"Hydrochoerus","children":[{"name":"Hydrochoerus isthmius","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Cricetidae","children":[{"name":"Thomasomys","children":[{"name":"Thomasomys monochromos","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"},{"name":"Dinomyidae","children":[{"name":"Dinomys","children":[{"name":"Dinomys branickii","size":1,"colname":"X5"}],"colname":"X4"}],"colname":"X3"}],"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":false,"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
+<p>Explore los generos y familias agrupados por su categoría</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Puede buscar cada una de las especies en el panel de la izquierda 👈 y tambien buscar por nombres de especies, autores y palabras clave en la ventana de busqueda 🔍︎</p>
+</div>
+</div>
+</section>
+<section id="cambios-en-las-categorias" class="level2">
+<h2 class="anchored" data-anchor-id="cambios-en-las-categorias">Cambios en las Categorias</h2>
+<p>71 especies que no habian sido evaluadas ahora cuentan con categoría.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="chorddiag html-widget html-fill-item" id="htmlwidget-e0f0828529c43dd6df6a" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-e0f0828529c43dd6df6a">{"x":{"matrix":[[0,0,0,0,0,0,0,3,0,1,0,0,0,0],[0,0,0,0,0,0,0,1,45,7,75,38,0,5],[0,0,0,0,0,0,0,1,3,8,5,0,0,7],[0,0,0,0,0,0,0,0,4,0,237,29,2,2],[0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,1,0,12,2,9,3],[0,0,0,0,0,0,0,0,1,0,6,2,5,22],[3,1,1,0,0,0,0,0,0,0,0,0,0,0],[0,45,3,4,0,1,1,0,0,0,0,0,0,0],[1,7,8,0,0,0,0,0,0,0,0,0,0,0],[0,75,5,237,0,12,6,0,0,0,0,0,0,0],[0,38,0,29,0,2,2,0,0,0,0,0,0,0],[0,0,0,2,0,9,5,0,0,0,0,0,0,0],[0,5,7,2,0,3,22,0,0,0,0,0,0,0]],"options":{"type":"bipartite","width":null,"height":null,"margin":100,"showGroupnames":true,"groupNames":["CR","DD","EN","LC","NE","NT","VU","CR","DD","EN","LC","NE","NT","VU"],"groupColors":["#D81E05","#D1D1C6","#FC7F3F","#60C659","#e5e5e5","#CCE226","#F9E814","#D81E05","#D1D1C6","#FC7F3F","#60C659","#e5e5e5","#CCE226","#F9E814"],"groupThickness":0.1,"groupPadding":0.03490658503988659,"groupnamePadding":[27,27,27,27,27,27,27,27,27,27,27,27,27,27],"groupnameFontsize":14,"groupedgeColor":null,"chordedgeColor":"#808080","categoryNames":["Ahora","Antes"],"categorynamePadding":100,"categorynameFontsize":28,"showTicks":true,"tickInterval":10,"ticklabelFontsize":10,"fadeLevel":0.1,"showTooltips":true,"showZeroTooltips":false,"tooltipNames":["CR","DD","EN","LC","NE","NT","VU","CR","DD","EN","LC","NE","NT","VU"],"tooltipFontsize":12,"tooltipUnit":"","tooltipGroupConnector":"  a  ","precision":"null","clickAction":null,"clickGroupAction":null}},"evals":[],"jsHooks":[]}</script>
+<p>Explore como cambiaron las categorías</p>
+</div>
+</div>
+<p>El proceso contó con la participacion de <strong>5 facilitadores</strong> y <strong>201 expertos</strong> que participaron en <strong>15 talleres</strong> en los cuales se evaluaron <strong>540 especies</strong>.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Conozca mas detalles sobre el proceso en esta publicación:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+Gómez-Valencia, Bibiana, Maria P. Baptiste, Hector E. Ramírez-Chaves, Elkin A. Noguera-Urbano, Andres Felipe Suarez-Castro, María M. Torres-Martínez, Gabriel Pantoja-Peña, y Diego J. Lizcano. 2021. Avance Del Proceso De evaluación De Riesgo De extinción De Los mamíferos En Colombia. Mammalogy Notes 7 (2), 335. <a href="https://doi.org/10.47603/mano.v7n2.335">doi:10.47603/mano.v7n2.335</a><span class="__dimensions_badge_embed__" data-doi="10.47603/mano.v7n2.335" data-style="large_rectangle"></span>
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="1" data-doi="10.47603/mano.v7n2.335" data-hide-no-mentions="true">
+
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/mamiferoscolombia\.org\/categorias");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Categorización de los mamíferos de Colombia is licensed under <br><a href="https://creativecommons.org/licenses/by/4.0/"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> Creative Commons CC BY 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/dlizcano/mammalcol/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Built by <a href="https://dlizcano.github.io/about">DL</a>, with <i class="fa-solid fa-heart" title="a heart" aria-label="heart"></i>, <a href="https://www.r-project.org/about.html"><i class="fa-brands fa-r-project" aria-label="r-project"></i></a> and <a href="https://quarto.org/"><img src="https://quarto.org/quarto.png" class="img-fluid" alt="Quarto" width="65"></a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

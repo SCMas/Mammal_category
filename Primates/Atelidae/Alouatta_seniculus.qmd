@@ -100,7 +100,7 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ## Justificación 
 
-Especie susceptible a causa de la deforestación, la caza y el tráfico, 25% reducción de la calidad de hábitat y la presencia de amenazas reales o potenciales en ventana temporal de 30 años. Resiliente dadas sus características folívoras, logra sobrevivir sin mayor exigencia.
+Especie susceptible debido a la deforestación, la caza y el tráfico ilegal, con una reducción estimada del 25% en la calidad de su hábitat y la presencia de amenazas reales o potenciales en una ventana temporal de 30 años. No obstante, es una especie resiliente debido a sus características folívoras, lo que le permite sobrevivir sin requerimientos ecológicos exigentes.
 
 
 Los estudios de @Miranda-Cardona2022, @Silva-Meneses2025 y @Montilla2017 describen datos de su ecología y distribución. 

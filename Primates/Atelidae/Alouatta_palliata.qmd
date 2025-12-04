@@ -83,8 +83,11 @@ dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
                                         identifier,
                                         #collectionCode,
                                         recordedBy
-                                        ) #|> 
-  #filter(recordedBy!="NA") # remove this point
+                                        ) |> 
+  filter(recordedBy!="NA") |> # remove this point
+	filter(recordedBy!="Boutique Carbon")
+# remove extra points by number
+# dat_sp1 <- dat_sp1[-c(46, 44, 43, 24),]
 
 # definir CRS
 projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
@@ -102,9 +105,7 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ## Justificación 
 
-Pese a que la especie tiene amplia distribución, se estima una reducción del 30% del tamaño poblacional en un periodo de 30 años o tres generaciones pasadas (20 años) y futura (10 años). Lo anterior producto de la observación directa en las zonas del Chocó, Cauca y Caribe, sumado a la reducción del área de ocupación y calidad del hábitat por quemas y deforestación, además de la cacería para tráfico de individuos y colecta.
-
-
+Pese a que la especie tiene amplia distribución, se estima una reducción del 30% del tamaño poblacional en un periodo de 30 años o tres generaciones pasadas (20 años) y futura (10 años). Esta tendencia se respalda en observaciones directas realizadas en las regiones del Chocó, Cauca y Caribe, donde se evidencia una disminución del área de ocupación y de la calidad del hábitat debido a quemas y deforestación, así como por la presión de cacería asociada al tráfico y a la colecta de individuos.
 
 
 ::: {layout="[[65,35]]"}
