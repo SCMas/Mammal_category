@@ -100,7 +100,7 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ## Justificación 
 
-Especie ampliamente distribuida y muy tráficada como mascota, es abundante. Por poco la reducción en 18 años alcanza el 25%, también estuvo cerca de cumplir los criterios A2 acde. 
+Especie ampliamente distribuida, abundante pero muy traficada como mascota. La reducción en los últimos 18 años estuvo cerca del 25% y también se aproximó al cumplimiento de los criterios A2 acde.
 
 
 

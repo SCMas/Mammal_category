@@ -4,7 +4,7 @@ subtitle: "Mono nocturno Chocoano"
 date: 11/10/2025
 author: 
   - Hugo Mantilla-Meluk
-  - Sebastián Montilla
+  - Sebastián O. Montilla
 format: html
 output:
   html_document:
@@ -84,6 +84,9 @@ dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
                                         ) #|> 
   #filter(recordedBy!="NA") # remove this point
 
+# remove extra points by number
+dat_sp1 <- dat_sp1[-c(7,6,3),]
+
 # definir CRS
 projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 # convertir tabla de puntos a sf
@@ -108,7 +111,7 @@ Casi satisface los subcriterios A4cd, pero no llega a los umbrales del 30%.
 ::: {layout="[[65,35]]"}
 ### Evaluadores:  
 
-Isabel Cristina Avila, Sebastián García
+Isabel Cristina Avila, Sebastián García, Sebastián O. Montilla
 
 
 ### Con apoyo de:

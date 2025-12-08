@@ -46,7 +46,7 @@ value_box(
 
 ## Foto
 
-![_Cebuella pygmaea_  (Foto: Malene Thyssen)](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Dv%C3%A6rgsilkeabe_Callithrix_pygmaea.jpg/960px-Dv%C3%A6rgsilkeabe_Callithrix_pygmaea.jpg)
+![_Cebuella pygmaea_  Puerto Nariño, Amazonas, Colombia (Foto: Andrea Claire Hinek)](img/sp/Cebuella_pygmaea.jpg)
 
 ## Mapa
 
@@ -82,7 +82,9 @@ dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
                                         #collectionCode,
                                         recordedBy
                                         ) |> 
-  filter(recordedBy!="NA") # remove this point
+  filter(recordedBy!="NA") |> # remove this point
+  filter(recordedBy!="P. Schnegg") |> 
+  filter(recordedBy!="Juan Carlos Londoño")
 
 # definir CRS
 projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"

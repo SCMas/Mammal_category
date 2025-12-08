@@ -4,7 +4,7 @@ subtitle: "Mono nocturno andino"
 date: 11/10/2025
 author: 
   - Juan David Sánchez
-  - Sebastián Montilla
+  - Sebastián O. Montilla
 format: html
 output:
   html_document:
@@ -81,8 +81,13 @@ dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
                                         species,
                                         year,
                                         recordedBy) |> 
-  filter(recordedBy!="NA") # remove this point
-
+  filter(recordedBy!="NA") |>   # remove this point
+  filter(recordedBy!="Bonilla-U. N.") |> 
+  filter(recordedBy!="K. von Sneidern") |> 
+  filter(recordedBy!="wpl500") |> 
+  filter(recordedBy!="P. Hershkovitz") |> 
+  filter(recordedBy!="Preparator(s): Robert L. Rausch")
+  
 # definir CRS
 projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 # convertir tabla de puntos a sf
@@ -99,7 +104,7 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ## Justificación 
 
-Se sospecha e infiere una reducción poblacional del 30% en un periodo de 24 años (tres generaciones), 14 años hacia el pasado y con una proyección de disminución continua en l10 años. Sus principales amenazas incluyen la pérdida de hábitat en razón a la deforestación, con núcleo en los Andes y centros poblados, y la expansión de a frontera agrícola. Otras amenzas en menor proporición incluyen la extracción para uso como mascota y mortalidad por líneas electricas.
+Se sospecha e infiere una reducción poblacional del 30% en un periodo de 24 años (tres generaciones), 14 años hacia el pasado y con una proyección de disminución continua en 10 años. Sus principales amenazas incluyen la pérdida de hábitat en razón a la deforestación, con núcleo en los Andes y centros poblados, y la expansión de a frontera agrícola. Otras amenzas incluyen la extracción de individuos para uso como mascota y mortalidad por líneas electricas, esta última especialmente importante en el eje cafetero.
 
 En este estudio @Montilla2020 muestran algunas amenazas y @Montilla2017 muestra su distribución.
 
@@ -108,7 +113,7 @@ En este estudio @Montilla2020 muestran algunas amenazas y @Montilla2017 muestra 
 ::: {layout="[[65,35]]"}
 ### Evaluadores:  
 
-Angela Maldonado, Iván Soto, Claudia Brieva, Néstor Roncancio, Hugo Mantilla, Natalia Atuesta.  
+Angela Maldonado, Iván Soto, Claudia Brieva, Néstor Roncancio, Hugo Mantilla, Natalia Atuesta, Sebastián O. Montilla.  
 
 
 ### Con apoyo de:

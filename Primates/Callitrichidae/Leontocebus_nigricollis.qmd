@@ -46,7 +46,7 @@ value_box(
 
 ## Foto
 
-![_Leontocebus nigricollis_ Sumaco, Ecuador (Foto: Charles J. Sharp)](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Black-mantled_tamarin_%28Saguinus_nigricollis_graellsi%29_Sumaco.jpg/960px-Black-mantled_tamarin_%28Saguinus_nigricollis_graellsi%29_Sumaco.jpg)
+![_Leontocebus nigricollis_ Lagos de Yahuarcaca, Leticia, Amazonas (Foto: Andrea Claire Hinek)](img/sp/Leontocebus_nigricollis.jpg)
 
 ## Mapa
 

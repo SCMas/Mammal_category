@@ -107,6 +107,8 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 Pese a que la especie tiene amplia distribución, se estima una reducción del 30% del tamaño poblacional en un periodo de 30 años o tres generaciones pasadas (20 años) y futura (10 años). Esta tendencia se respalda en observaciones directas realizadas en las regiones del Chocó, Cauca y Caribe, donde se evidencia una disminución del área de ocupación y de la calidad del hábitat debido a quemas y deforestación, así como por la presión de cacería asociada al tráfico y a la colecta de individuos.
 
+En este trabajo @Hernandez-Jaramillo2025 extiende la distribución de la especie en Chocó y Risaralda.
+
 
 ::: {layout="[[65,35]]"}
 ### Evaluadores:

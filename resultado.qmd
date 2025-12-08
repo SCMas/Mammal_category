@@ -16,7 +16,7 @@ Luego del proceso de categorizacion las 540 especies de mamíferos quedaron 24 e
 #| echo: false
 #| message: false
 #| warning: false
-#| fig-cap: "Explore los generos y familias agrupados por su categoría"
+#| fig-cap: "Explore los ordenes, familias y generos agrupados por su categoría, moviendo el ratón desde el interior hacia afuera."
 
 library(treemap)
 library(sunburstR)
@@ -68,7 +68,7 @@ Puede buscar cada una de las especies en el panel de la izquierda 👈 y tambien
 #| echo: false
 #| message: false
 #| warning: false
-#| fig-cap: "Explore como cambiaron las categorías"
+#| fig-cap: "Explore como cambiaron las categorías, de izquierda a derecha, moviendo el ratón sobre la grafica."
 #| 
 library(chorddiag)
 
@@ -121,7 +121,7 @@ interactive_plot2
 ```
 
 
-El proceso contó con la participacion de **5 facilitadores** y  **201 expertos** que participaron en **15 talleres** en los cuales se evaluaron **540 especies**.
+El proceso contó con la participacion de **5 facilitadores** y  **202 expertos** que participaron en **15 talleres** en los cuales se evaluaron **540 especies**.
 
 
 
