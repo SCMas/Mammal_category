@@ -29,7 +29,7 @@ IUCNStatus <- new_class(
 #######################################
 # Function to get color from category
 get_iucn_color <- function(category) {
-  colors <- c(
+  iucn_color_map <- c(
     DD = "#D1D1C6",
     LC = "#60C659",
     NT = "#CCE226",
@@ -39,24 +39,24 @@ get_iucn_color <- function(category) {
     EX = "#000000"
   )
   
-  if (!category %in% names(colors)) {
+  if (!category %in% names(iucn_color_map)) {
     stop("Invalid category. Must be one of: DD, LC, NT, VU, EN, CR, EX")
   }
   
-  return(colors[[category]])
+  return(iucn_color_map[[category]])
 } # end get_iucn_color
 
 #######################################
 # Constructor function with predefined colors
 iucn_status <- function(category) {
-  descriptions <- c(
-    DD = "Data Deficient",
-    LC = "Least Concern",
-    NT = "Near Threatened",
+  description <- c(
+    DD = "Datos Deficientes",
+    LC = "Preocupación Menor",
+    NT = "Casi Amenazado",
     VU = "Vulnerable",
-    EN = "Endangered",
-    CR = "Critically Endangered",
-    EX = "Extinct"
+    EN = "En Peligro",
+    CR = "En Peligro Critico",
+    EX = "Extinto"
   )
   
   color <- get_iucn_color(category)

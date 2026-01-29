@@ -3,7 +3,7 @@ title: "_Plecturocebus discolor_"
 subtitle: "Huicoco de cola blanca"
 date: 11/10/2025
 author: 
-  - Xiomara Carretero
+  - Xyomara Carretero-Pinzón
 format: html
 output:
   html_document:

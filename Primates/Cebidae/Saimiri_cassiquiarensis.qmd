@@ -3,7 +3,7 @@ title: "_Saimiri cassiquiarensis_"
 subtitle: "Mono ardilla"
 date: 11/10/2025
 author: 
-  - Xiomara Carretero
+  - Xyomara Carretero-Pinzón
 format: html
 output:
   html_document:
@@ -83,7 +83,15 @@ dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
                                         collectionCode,
                                         recordedBy
                                         ) |> 
-  filter(recordedBy!="NA") # remove this point
+  filter(recordedBy!="NA") |> 
+  filter(recordedBy!="lakukahotel") |> 
+  filter(recordedBy!="Lida Garcia Trujillo") |>  
+  filter(recordedBy!="valeriagarciamon") |> 
+  filter(recordedBy!="Andrew J. Crawford") |> 
+  filter(recordedBy!="Kim Draper") |> 
+  filter(recordedBy!="Carolina Gómez")# remove this point
+
+dat_sp1 <- dat_sp1[-c(555,484,383, 322,312,72,36),]
 
 # definir CRS
 projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
@@ -101,8 +109,7 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ## Justificación 
 
-Ampliamente distribuida, abundante, se adapta bien a ambientes preturbados.
-
+Aunque la especies es considerada como de preocupación menor, la subespecie _Saimiri c. albigena_, endémica de Colombia, es considerada como Vulnerable (A2acd) y aparece listada en la lista roja de la IUCN como subespecie reconocida con esta misma clasificación. Además algunas revisiones recientes la han subido a categoría de especie. La principales amenazas están relacionadas con una reducción en el tamaño de la población basado en una reducción de 30 % o más del tamaño poblacional observado y estimado en los últimos 10 años y disminución y fragmentación del área de ocupación y calidad del hábitat debido a ganaderia, agricultura, plantaciones de palma de aceite y explotación y exploracion petrolera, así como el tráfico para mascotas.
 
 
 

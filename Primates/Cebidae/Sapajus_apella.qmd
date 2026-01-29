@@ -47,7 +47,7 @@ value_box(
 
 ## Foto
 
-![_Sapajus apella_ Reserva Marasha, en la orilla de la Quebrada Chinería. Frontera Colombia-Perú  (Foto: Andrea Claire Hinek)](img/sp/Sapajus_apella.jpg)
+![_Sapajus apella_ Reserva Marasha, en la orilla de la Quebrada Chinería. Frontera Colombia-Perú  (Foto: Andrea Claire Hinek)](/img/sp/Sapajus_apella.jpg)
 
 ## Mapa
 

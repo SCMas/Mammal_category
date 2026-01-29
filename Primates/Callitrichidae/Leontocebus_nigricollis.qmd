@@ -46,7 +46,7 @@ value_box(
 
 ## Foto
 
-![_Leontocebus nigricollis_ Lagos de Yahuarcaca, Leticia, Amazonas (Foto: Andrea Claire Hinek)](img/sp/Leontocebus_nigricollis.jpg)
+![_Leontocebus nigricollis_ Lagos de Yahuarcaca, Leticia, Amazonas (Foto: Andrea Claire Hinek)](/img/sp/Leontocebus_nigricollis.jpg)
 
 ## Mapa
 

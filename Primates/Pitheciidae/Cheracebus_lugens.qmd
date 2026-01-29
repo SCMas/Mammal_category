@@ -3,7 +3,7 @@ title: "_Cheracebus lugens_"
 subtitle: "Viudita de mano blanca, macaco"
 date: 11/10/2025
 author: 
-  - Adriana Acero
+  - Adriana Acero-Murcia
 format: html
 output:
   html_document:
@@ -101,9 +101,9 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ## Justificación 
 
-Se estima que la reducción es del 25%, por poco alcanza la reducción en las últimas tres generaciones.
+La especie ha experimentado una reducción poblacional del 25% a lo largo de las últimas tres generaciones, un valor que se sitúa ligeramente por debajo del umbral requerido para la clasificación en una categoría de amenaza de la UICN.
 
-
+La evidencia histórica sugiere una amplia distribución de _Cheracebus lugens_ en Colombia, Brasil y Venezuela. No obstante, es imprescindible realizar nuevos estudios de campo para obtener datos ecológicos y de distribución actualizados que permitan comprender mejor su estado de conservación en la Amazonia y Orinoquia colombiana. 
 
 
 

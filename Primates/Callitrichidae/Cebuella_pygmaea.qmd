@@ -46,7 +46,7 @@ value_box(
 
 ## Foto
 
-![_Cebuella pygmaea_  Puerto Nariño, Amazonas, Colombia (Foto: Andrea Claire Hinek)](img/sp/Cebuella_pygmaea.jpg)
+![_Cebuella pygmaea_  Puerto Nariño, Amazonas, Colombia (Foto: Andrea Claire Hinek)](/img/sp/Cebuella_pygmaea.jpg)
 
 ## Mapa
 

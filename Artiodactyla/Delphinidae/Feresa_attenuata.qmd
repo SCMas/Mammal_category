@@ -1,0 +1,125 @@
+---
+title: "_Feresa attenuata_"
+subtitle: "Orca pigmea"
+date: 11/10/2025
+author: Dalia C. Barragán-Barrera
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+google-scholar: true
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "DD",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = value_box_theme(bg = "#D1D1C6"),#, fg = "#000000"),
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+![_Feresa attenuata_  Guam. (Foto: Adam U. / NOAA )](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Pygmy_killer_whales_%28Feresa_attenuata%29_off_of_Guam_%28anim252384854%29.jpg/960px-Pygmy_killer_whales_%28Feresa_attenuata%29_off_of_Guam_%28anim252384854%29.jpg)
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Feresa attenuata")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        #projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        year,
+                                        identifier,
+                                        collectionCode,
+                                        recordedBy
+                                        ) #|> 
+  #filter(recordedBy!="NA") # remove this point
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
+
+```
+
+
+
+## Justificación 
+
+Esta especie se considera como Datos Insuficientes (DD) debido a que no hay datos ni información sobre su población, hábitats y ecología ni las amenazas que podrían estar afectándola.
+
+
+
+ 
+::: {layout="[[65,35]]"}
+### Evaluadores:
+
+Lina García, Fernando Trujillo, Isabel Cristina Avila, Angela Paola Recalde, Federico Mosquera, Diego Gutierrez.
+
+
+
+:::
+
+ 
+
+
+
+
+## Bibliografía citada 
+
+::: {#refs}
+:::

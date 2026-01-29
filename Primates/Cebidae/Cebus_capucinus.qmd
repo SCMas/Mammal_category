@@ -46,7 +46,7 @@ value_box(
 
 ## Foto
 
-![_Cebus capucinus_  (Foto: Steven G. Johnson )](https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cebus_capucinus%2C_Costa_Rica.JPG/960px-Cebus_capucinus%2C_Costa_Rica.JPG)
+![_Cebus capucinus_  Uraba, Colombia. (Foto: Silvana Cárdenas-Ortega)](/img/sp/Cebus_capucinus.jpg)
 
 ## Mapa
 

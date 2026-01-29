@@ -3,7 +3,7 @@ title: "_Plecturocebus ornatus_"
 subtitle: "Mono zocay, huicoco de manos blancas"
 date: 11/10/2025
 author: 
-  - Xiomara Carretero
+  - Xyomara Carretero-Pinzón
 format: html
 output:
   html_document:

@@ -46,7 +46,7 @@ value_box(
 
 ## Foto
 
-![_Leontocebus fuscus_  (Foto: jeremdelajungle )](https://inaturalist-open-data.s3.amazonaws.com/photos/359032556/medium.jpeg)
+![_Leontocebus fuscus_  Puerto Asís - Putumayo (Foto: Bayron Burbano)](/img/sp/Leontocebus_fuscus.jpg)
 
 ## Mapa
 

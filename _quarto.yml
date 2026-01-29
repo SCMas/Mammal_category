@@ -6,7 +6,7 @@ website:
   google-analytics:
     tracking-id: "G-297VCZ49MN" # Replace with your own actual GA4 tracking ID
     anonymize-ip: false
-  favicon: favicon.png
+  favicon: favicon.ico
   description: "mamíferos | Colombia | Lista roja de mamíferos | mamíferos amenazados | mammal red list"
   cookie-consent: false
   twitter-card: true
@@ -78,7 +78,11 @@ lightbox:
   match: auto
   effect: fade
   desc-position: right
-  loop: TRUE
+  loop: FALSE
   
 filters:
   - bibentry
+  
+  
+  
+  

@@ -3,7 +3,7 @@ title: "_Cheracebus lucifer_"
 subtitle: "Mono tocon de mano amarilla, macaco"
 date: 11/10/2025
 author: 
-  - Adriana Acero
+  - Adriana Acero-Murcia
 format: html
 output:
   html_document:
@@ -47,7 +47,7 @@ value_box(
 
 ## Foto
 
-![_Cheracebus lucifer_   Sucumbíos, Ecuador. (Foto: Marc Faucer )](https://inaturalist-open-data.s3.amazonaws.com/photos/11749601/medium.jpeg)
+![_Cheracebus lucifer_   Puerto Asis, Putumayo, Colombia. (Foto: Bayron Burbano)](/img/sp/Cheracebus_lucifer.jpg)
 
 ## Mapa
 
@@ -101,9 +101,7 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ## Justificación 
 
-Su distribución en Colombia se restringe a la Amazonía. Afronta amenazas como la cacería, uso para ceremonias, tráfico y pérdida de hábitat, con datos que soportan la reducción desde los años 90 en el sur de la amazonía. Se infiere que la especie presenta una reducción poblacional del 30% con una ventana móvil de 8 años en el pasado y 10 años en el futuro.  Asimismo, se considera que no presenta efecto rescate porque las poblaciones de la especie en Brasil presentan altas presiones en paisajes fragmentados. Se infiere que se redujo en un 30% con la salvedad de que es difícil observar y se deben estimular los estudios sobre esta especie. No hay posibilidades de efecto rescate porque en Brasil sufre de fuertes presiones.
-
-
+Se encuentra restringida a la región amazónica. Las principales amenazas son la pérdida y fragmentación de su hábitat. Otras amenazas documentadas incluyen la cacería, el tráfico ilegal y el uso para ceremonias locales. La evidencia histórica sugiere una disminución poblacional sostenida en el sur de la Amazonía colombiana desde la década de 1990. Se infiere una reducción poblacional del 30% para la especie, determinada a lo largo de una ventana temporal móvil que abarca 8 años en el pasado y 10 años en el futuro. Esta inferencia se realiza reconociendo la dificultad inherente para la observación directa y el monitoreo de la especie en campo, lo que subraya la necesidad de estimular estudios ecológicos y demográficos para validar la tendencia poblacional. No presenta posibilidad de "Efecto Rescate", dado que las poblaciones adyacentes de la especie en Brasil también están sujetas a altas presiones y se encuentran en paisajes fragmentados.
 
 
 

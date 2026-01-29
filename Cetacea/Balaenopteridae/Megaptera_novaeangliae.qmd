@@ -1,0 +1,128 @@
+---
+title: "_Megaptera novaeangliae_"
+subtitle: "Ballena jorobada"
+date: 11/15/2025
+author:  
+  - Isabel C. Ávila
+format: html
+output:
+  html_document:
+    theme:
+      bslib: true
+bibliography: refs.bib
+citation:
+  type: post-weblog
+  container-title: "Categorización de los mamíferos de Colombia"
+google-scholar: true
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| echo: false
+library(bslib)
+library(bsicons)
+```
+
+
+## Categoria  
+
+<!-- ::: {.callout-warning}
+## VU A2 cde
+::: --> 
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+value_box(
+  title = NULL,
+  value = "NT A3cd",
+  # showcase = bs_icon("music-note-beamed"),
+  theme = value_box_theme(bg = "#CCE226"),#, fg = "#000000"),
+  max_height="100px"
+)
+
+```
+
+## Foto
+
+![_Megaptera novaeangliae_      Buenaventura, Colombia (Foto: Isabel C. Avila) ](https://inaturalist-open-data.s3.amazonaws.com/photos/552291573/medium.jpg)
+
+## Mapa
+
+```{r}
+#| include: true
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| #label: fig-line-plot
+#| fig-cap: "Mapa de puntos. Datos de GBIF"
+#| #column: screen-inset-right
+#| 
+library(rgbif)
+library(sf)
+library(mapview)
+library(tidyverse)
+# Si únicamente descargará los datos de una especie ----
+species1 <- c("Megaptera novaeangliae")
+# Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
+gbif_data_sp1 <- occ_search(scientificName = species1, 
+                            hasCoordinate = TRUE, 
+                            country = "CO",
+                            limit = 20000)
+# crear una tabla con los datos descargados:
+dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
+                                        decimalLatitude,
+                                        decimalLongitude,
+                                        #projectId,
+                                        basisOfRecord,
+                                        acceptedScientificName,
+                                        species,
+                                        year,
+                                        identifier,
+                                        collectionCode,
+                                        recordedBy
+                                        ) #|> 
+  #filter(recordedBy!="NA") #|> 
+  #filter(recordedBy!="B. Mechler") |> # remove this point
+  #filter(recordedBy!="C.A. Velsquez") |> 
+  #filter(recordedBy!="Yaneth Muñoz-Saba")
+# remove pionts asked by Pablo
+# dat_sp1 <- dat_sp1[-c(1383, 1381, 1380, 1387, 1378, 1466, 1158),]
+
+# definir CRS
+projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+# convertir tabla de puntos a sf
+sp_sf <- st_as_sf(x = dat_sp1,
+                         coords = c("decimalLongitude",
+                                    "decimalLatitude"),
+                            crs = projlatlon)
+
+mapview(sp_sf, zcol="species", alpha = 0)
+
+```
+
+
+
+## Justificación 
+
+Ballena de amplia distribución, suceptible a redes de pesca, colisiones y sobreturismo. 
+
+
+
+::: {layout="[[65,35]]"}
+### Evaluadores:  
+
+Fernando Trujillo, Isabel Cristina Avila, Diego Gutierrez , Vladimir Rojas, Angela Paola Recalde, Federico Mosquera.
+
+
+:::
+
+
+
+## Bibliografía citada 
+
+::: {#refs}
+:::

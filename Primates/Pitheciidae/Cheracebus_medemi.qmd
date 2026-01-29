@@ -39,7 +39,7 @@ value_box(
   title = NULL,
   value = "VU A4cd+B1ab(iii)",
   # showcase = bs_icon("music-note-beamed"),
-  theme = value_box_theme(bg = "#CCE226"),#, fg = "#000000"),
+  theme = value_box_theme(bg = "#F9E814"),#, fg = "#000000"),
   max_height="100px"
 )
 
@@ -47,7 +47,7 @@ value_box(
 
 ## Foto
 
-![_Cheracebus medemi_   Putumayo, Colombia. (Foto: Diego Cueva )](https://inaturalist-open-data.s3.amazonaws.com/photos/118926540/medium.jpeg)
+![_Cheracebus medemi_   Puerto Asis, Putumayo, Colombia. (Foto: Bayron Burbano)](Cheracebus_medemi.jpg/img/sp)
 
 ## Mapa
 

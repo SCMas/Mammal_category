@@ -45,7 +45,7 @@ value_box(
 
 ## Foto
 
-![_Saguinus oedipus_ Brevard Zoo, USA (Foto: Rusty Clark)](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Cotton_Top_Tamarin_-_Brevard_Zoo_-_Flickr_-_Rusty_Clark.jpg/960px-Cotton_Top_Tamarin_-_Brevard_Zoo_-_Flickr_-_Rusty_Clark.jpg)
+![_Saguinus oedipus_ Uraba-Colombia (Foto: Silvana Cárdenas-Ortega)](/img/sp/Saguinus_oedipus.jpg)
 
 ## Mapa
 

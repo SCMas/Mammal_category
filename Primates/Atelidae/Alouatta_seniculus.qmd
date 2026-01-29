@@ -46,7 +46,7 @@ value_box(
 
 ## Foto
 
-![_Alouatta seniculus_  (Foto: Miguel Rangel jr.)](https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Alouatta_seniculus_Sorocaba.JPG/960px-Alouatta_seniculus_Sorocaba.JPG)
+![_Alouatta seniculus_  Puerto Asis, Putumayo, Colombia. (Foto: Bayron Burbano)](/img/sp/Alouatta_seniculus.jpg)
 
 ## Mapa
 

@@ -3,7 +3,7 @@ title: "_Plecturocebus caquetensis_"
 subtitle: "Titi de Caquetá, mono bonito del Caquetá"
 date: 11/10/2025
 author: 
-  - Adriana Acero
+  - Adriana Acero-Murcia
   - Johanna Villota
 format: html
 output:
@@ -102,7 +102,10 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ## Justificación 
 
-Esta especie está catalogada como En Peligro Crítico debido a una disminución de la población, que se sospecha es de más del 80% en 24 años (tres generaciones), debido a una reducción del área de ocupación causada por la ganadería extensiva y el cultivo de cultivos ilícitos, y las causas de la reducción ciertamente no se han detenido. La especie también se ve afectada por taxones introducidos y contaminantes (fumigación de defoliantes como medida para reducir la producción de cocaína). Se sospecha que quedan menos de 100 individuos en estado silvestre y menos de 50 individuos maduros; esto no se puede utilizar para el criterio C, pero la especie aún califica como En Peligro Crítico bajo el criterio A. Se deben recopilar datos de población para una futura reevaluación para confirmar si el tamaño de la población es tan pequeño como se sospecha actualmente.
+_Plecturocebus caquetensis_ ha sido categorizado como En Peligro Crítico (CR), una clasificación justificada bajo el Criterio A de la UICN. Esta categoría de amenaza se basa en la inferencia de una reducción poblacional superior al 80% a lo largo de las últimas tres generaciones (estimadas en 24 años). Esta drástica declinación se atribuye directamente a una severa reducción en el Área de Ocupación, impulsada primariamente por la ganadería extensiva y la expansión de cultivos ilícitos, enfatizando que los factores causales de esta reducción poblacional persisten activamente. Otros factores de presión incluyen la afectación por taxones introducidos y la exposición a contaminantes químicos (e.g., la fumigación de defoliantes como medida de erradicación de cultivos ilícitos).
+
+Si bien existe la sospecha de que la población remanente es inferior a 100 individuos totales y 50 individuos maduros en estado silvestre, este tamaño poblacional hipotético no fue el fundamento para la aplicación del Criterio C, sino que la clasificación de En Peligro Crítico fue confirmada por la tasa de declive bajo el Criterio A. Por lo tanto, es imperativo recopilar datos poblacionales robustos en toda el área de distribución para una reevaluación futura que confirme las estimaciones actuales del tamaño poblacional.
+
 
 En su estudio @Acero-Murcia2021 describen con detalle el comportamiento reproductivo de la especie.
 
