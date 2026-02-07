@@ -100,6 +100,14 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 No hay registros de GBIF en Colombia.
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo("Callimico goeldii")[1]`){target="_blank"}, `{r} get_biomodelo("Callimico goeldii")[2]` 
+:::
+
+
+
 ## Justificación 
 
 Se conoce muy poco de la especie, no hay datos actualizados de su distribución en Colombia. Esta especie no ha sido registrada en el país desde hace varias dédadas.  Hay dos especimenes en el ICN y uno en el IAvH. 

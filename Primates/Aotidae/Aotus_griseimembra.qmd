@@ -95,6 +95,13 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
+
+
 ## Justificación 
 
 Se estima una reducción poblacional del 30%, con una pérdida en el pasado (14 años) y continua hacia el futuro (10 años). Pese a que es una especie de amplia distribución, considerada como frecuente y con plasticidad en el uso de coberturas (tolera ambientes degradados y zonas periurbanas), la pérdida y fragmentación del hábitat como los bosques húmedos del Magdalena Medio y del Bosque Seco en el Caribe están conduciendo a un declive. Asimismo, la extracción de individuos para su uso como mascota impacta las poblaciones de la especie, y en menor proporción mortalidad por lineas eléctricas. 

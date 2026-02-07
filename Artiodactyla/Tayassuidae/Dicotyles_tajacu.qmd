@@ -47,7 +47,7 @@ value_box(
 
 ## Foto
 
-![_Dicotyles tajacu_ en PNN Purace. Colombia (Foto: Nilson Bolaños y Rodrigo Sarria)](/img/sp/Pecari_tajacu.jpg).
+![_Dicotyles tajacu_ en PNN Purace. Colombia (Foto: Nilson Bolaños y Rodrigo Sarria).](/img/sp/Pecari_tajacu.jpg)
 
 ## Mapa
 
@@ -64,7 +64,7 @@ library(sf)
 library(mapview)
 library(tidyverse)
 # Si únicamente descargará los datos de una especie ----
-species1 <- c("Pecari_tajacu")
+species1 <- c("Pecari tajacu")
 # Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
 gbif_data_sp1 <- occ_search(scientificName = species1, 
                             hasCoordinate = TRUE, 
@@ -94,6 +94,11 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ```
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo("Dicotyles tajacu")[1]`){target="_blank"}, `{r} get_biomodelo("Dicotyles tajacu")[2]` 
+:::
 
 
 ## Justificación 
@@ -102,7 +107,7 @@ Especie abundante y de amplia distribución. Aunque es tolerante a la transforma
 
 
 
-
+En este estudio @Pisso-Florez2025 describen un nuevo registro de distribución.
 
 
 ## Evaluadores:
@@ -110,7 +115,7 @@ Especie abundante y de amplia distribución. Aunque es tolerante a la transforma
 Olga Montenegro, José F. González-Maya, Sergio Escobar-Lasso, Andrés Arias-Alzate, Sebastian Mejía, Diego J. Lizcano, Diego R. Gutierrez, Maria Piedad Baptiste E., Laura Nova-León, Lina M. García-Loaiza, Hector Manuel Arango, Cristian Cruz, Angélica Díaz, Bibiana Gómez, Elkin Noguera, Mónica Peñuela, Catalina Sánchez-Lalinde, Gabriel Pantoja, Lain E. Pardo
 
 
-En este estudio @Pisso-Florez2025 describen un nuevo registro de distribución.
+
 
 
 ## Bibliografía citada 

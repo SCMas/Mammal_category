@@ -47,7 +47,7 @@ value_box(
 
 ## Foto
 
-![_Ziphius cavirostris_       (Foto: Luke Foster) ](https://inaturalist-open-data.s3.amazonaws.com/photos/211526713/medium.jpg)
+![_Ziphius cavirostris_       (Foto: Isabel C. Avila) ](/img/sp/Globicephala_macrorhynchus.jpg)
 
 ## Mapa
 
@@ -106,15 +106,23 @@ mapview(sp_sf, zcol="species", alpha = 0)
 No hay registros de la especie en GBIF para Colombia.
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo("Ziphius cavirostris")[1]`){target="_blank"}, `{r} get_biomodelo("Ziphius cavirostris")[2]` 
+:::
+
+
+
 ## Justificación 
 
-Esta especie se considera como Datos Insuficientes (DD) debido a que no hay datos ni información sobre su población, hábitats y ecología ni las amenazas que podrían estar afectándola.
+Esta especie se considera como Datos Insuficientes (DD) debido a que, aunque existe información sobre su abundancia en el Pacífico colombiano, no se cuenta con datos actualizados ni con información sobre la tendencia de su población, sus hábitats, su ecología, ni sobre las amenazas que podrían estar afectándola.
 
 
 ::: {layout="[[65,35]]"}
 ### Evaluadores:  
 
-Javier Colmenares, Andrés Julian Lozano, Miguel Rodriguez , Hector Chaves, David Marín, Jairo Pérez-Torres, Sebastián Cifuentes-Acevedo, Hector Chaves, John Castaño,Vladimir Rojas, John Castaño
+Javier Colmenares, Andrés Julian Lozano, Miguel Rodriguez , Hector Chaves, David Marín, Jairo Pérez-Torres, Sebastián Cifuentes-Acevedo, Hector Chaves, John Castaño,Vladimir Rojas, John Castaño, Isabel C. Avila.
 
 
 :::

@@ -106,6 +106,14 @@ mapview(sp_sf, zcol="species", alpha = 0)
 
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
+
+
+
 ## Justificación 
 
 Se estima una futura disminución del 30% en el tamaño de su población, resultado de la amenaza que representan su uso en pesquerías, captura incidental en redes de pesca, colisión con embarcaciones, además de la degradación del hábitat en las zonas costeras por vertimientos de aguas contaminadas por minería y derrames de petróleo.  En Colombia, la especie se ha reportado sólo en el Caribe.

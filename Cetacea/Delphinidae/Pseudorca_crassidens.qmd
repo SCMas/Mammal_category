@@ -37,9 +37,9 @@ library(bsicons)
 #| echo: false
 value_box(
   title = NULL,
-  value = "LC",
+  value = "NT A2cd",
   # showcase = bs_icon("music-note-beamed"),
-  theme = value_box_theme(bg = "#60C659"),#, fg = "#000000"),
+  theme = value_box_theme(bg = "#CCE226"),#, fg = "#000000"),
   max_height="100px"
 )
 
@@ -105,10 +105,16 @@ mapview(sp_sf, zcol="species", alpha = 0)
 ```
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
+
 
 ## Justificación 
 
-Amplia distribución pero muy rara y con poca información en Colombia, su amenaza principal es la captura accidental en redes de pesca.
+Esta especie se considera Casi Amenazada (NT) debido a que, aunque su distribución es amplia, en Colombia se dispone de poca información actual sobre ella. En Colombia enfrenta amenazas como la captura incidental en redes de pesca, especialmente redes de cerco, y colisiones con embarcaciones. 
 
 
 

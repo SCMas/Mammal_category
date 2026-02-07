@@ -101,6 +101,14 @@ mapview(sp_sf, zcol="species", alpha = 0)
 
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
+
+
+
 ## Justificación 
 
 Se estima que la especie presenta una reducción del 30% en una ventana móvil de 30 años en el pasado y 15 años en el futuro, dado que existe una reducción de la calidad y cantidad de hábitat, a causa de la presencia de grandes núcleos de deforestación en la región Andina y Amazónica, y por la presión por cacería.

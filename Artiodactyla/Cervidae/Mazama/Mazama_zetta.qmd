@@ -93,6 +93,15 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ```
 
+No hay registros de GBIF.
+
+
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo("Mazama zetta")[1]`){target="_blank"}, `{r} get_biomodelo("Mazama zetta")[2]` 
+:::
+
 
 
 ## Justificación 

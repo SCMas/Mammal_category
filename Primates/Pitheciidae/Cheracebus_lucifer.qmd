@@ -99,6 +99,14 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
+
+
+
 ## Justificación 
 
 Se encuentra restringida a la región amazónica. Las principales amenazas son la pérdida y fragmentación de su hábitat. Otras amenazas documentadas incluyen la cacería, el tráfico ilegal y el uso para ceremonias locales. La evidencia histórica sugiere una disminución poblacional sostenida en el sur de la Amazonía colombiana desde la década de 1990. Se infiere una reducción poblacional del 30% para la especie, determinada a lo largo de una ventana temporal móvil que abarca 8 años en el pasado y 10 años en el futuro. Esta inferencia se realiza reconociendo la dificultad inherente para la observación directa y el monitoreo de la especie en campo, lo que subraya la necesidad de estimular estudios ecológicos y demográficos para validar la tendencia poblacional. No presenta posibilidad de "Efecto Rescate", dado que las poblaciones adyacentes de la especie en Brasil también están sujetas a altas presiones y se encuentran en paisajes fragmentados.

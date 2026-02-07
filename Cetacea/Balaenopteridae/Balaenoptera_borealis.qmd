@@ -105,10 +105,16 @@ mapview(sp_sf, zcol="species", alpha = 0)
 ```
 Sin registros de GBIF en Colombia.
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo("Balaenoptera borealis")[1]`){target="_blank"}, `{r} get_biomodelo("Balaenoptera borealis")[2]` 
+:::
+
 
 ## Justificación 
 
-Esta especie es poco estudiada y poco conocida.
+Esta especie se considera como Datos Insuficientes (DD) debido a la falta de información sobre el tamaño de su población, su distribución, su ecología y las amenazas que podrían estar afectándola
 
 
 

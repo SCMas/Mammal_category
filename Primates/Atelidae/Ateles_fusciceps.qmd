@@ -100,6 +100,14 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
+
+
+
 ## Justificación 
 
 Se estima una reducción poblacional del 80% en los últimos 45 años, con 30 años hacia el pasado y 15 hacia el futuro (tres generaciones). La especie ya no se registra en la región Pacífica. Hernández-Jaramillo (datos sin publicar) realizó entrevistas y muestreos en toda el área de distribución de la especie (45 localidades) y sólo fue detectada en 15 localidades. El estudio de @Hernandez-Jaramillo2025 confirma que las pocas poblaciones saludables presentan fuertes presiones por sobreexplotación, resultado de cacería y tráfico por parte de las comunidades indígenas, negras y afrodescendientes, lo cual se intensifica con los reportes de decomisos de adultos y crías por parte de las Corporaciones Autónomas Regionales del Urabá y Córdoba. Aunque en el Chocó aún existen grandes extensiones de bosque, actualmente se encuentran algunos núcleos de deforestación que estarían reduciendo el área de ocupación, así como la calidad del hábitat de la especie, aumentando el riesgo de extinción. Se considera localmente extinta al sur del país. El cambio en la categoría de riesgo de extinción no es genuino, respecto a la evaluación realizada en 2014, puesto que surge como resultado nueva información y conocimiento sobre la especie.

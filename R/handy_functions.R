@@ -2,11 +2,11 @@
 
 library(S7)
 library(glue)
-library(purrr)
-library(tidyverse)
-library(mapview)
-library(sf)
-library(tmap)
+# library(purrr)
+#library(tidyverse)
+#library(mapview)
+#library(sf)
+#library(tmap)
 
 
 #######################################
@@ -49,7 +49,7 @@ get_iucn_color <- function(category) {
 #######################################
 # Constructor function with predefined colors
 iucn_status <- function(category) {
-  description <- c(
+  descriptions <- c(
     DD = "Datos Deficientes",
     LC = "Preocupación Menor",
     NT = "Casi Amenazado",
@@ -91,3 +91,29 @@ get_all_iucn_categories <- function() {
 # Or create full status object:
 status <- iucn_status("EN")
 # status@color
+
+
+#####################################
+#####################################
+
+
+library(readxl)
+categ_table <- read_excel("C:/CodigoR/Mammal_Eval/data/Categorias_finales2025_sin_sub_especie_con_biomodelo.xlsx")
+get_biomodelo <- function(sp){
+  sp_row <- which(categ_table$NOMBRE==sp)
+  biomodelo <- categ_table$Enlace_BioModelo[sp_row]
+  estado <- categ_table$Estado[sp_row]
+  
+  if (is.na(biomodelo) == TRUE) {
+    #warning(paste("Species", sp, "not found in database"))
+    estado <- "No hay Biomodelo"
+    biomodelo <- "https://biomodelos.humboldt.org.co/es/species/visor?species_id=0"
+  }
+  
+  return(c(biomodelo, estado))
+}
+
+
+####################################
+
+

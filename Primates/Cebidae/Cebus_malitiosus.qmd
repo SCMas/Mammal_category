@@ -99,10 +99,17 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 ```
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
+
+
 
 ## Justificación 
 
-Anteriormente considerado como subespecie del capuchino de frente blanca (_Cebus albifrons_), pero fue reclasificado por Mittermeier y Rylands como una especie separada en 2013. Restringidos a la sierra nevada de Santa Marta. No se conoce de su biología ni poblaciones. 
+Anteriormente considerado como subespecie del capuchino de frente blanca (_Cebus albifrons_), pero fue reclasificado por Mittermeier y Rylands como una especie separada en 2013. Restringidos a la Sierra Nevada de Santa Marta. No se conoce de su biología ni poblaciones. 
 
 
 

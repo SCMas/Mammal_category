@@ -98,6 +98,15 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 No hay datos de la especie en GBIF
 
 
+
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo("Cebus leucocephalus")[1]`){target="_blank"}, `{r} get_biomodelo("Cebus leucocephalus")[2]` 
+:::
+
+
+
 ## Justificación 
 
 Anteriormente considerado como subespecie del capuchino de frente blanca (_Cebus albifrons_), pero fue pero fue elevada a nivel de especie a partir de análisis moleculares. La especie está restringida a la serrania del Perijá. No se conoce de su biología ni poblaciones en Colombia. 

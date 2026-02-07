@@ -104,11 +104,16 @@ mapview(sp_sf, zcol="species", alpha = 0)
 
 ```
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
 
 
 ## Justificación 
 
-Esta especie es suceptible a colisiones y redes de pesca.
+Esta especie se considera Casi Amenazada (NT) debido a que presenta tendencias poblacionales negativas en la región y ha sido afectada en Colombia por colisiones con embarcaciones y enmallamientos accidentales en redes de pesca.
 
 
 

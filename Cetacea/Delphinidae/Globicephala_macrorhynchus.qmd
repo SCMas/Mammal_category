@@ -105,10 +105,17 @@ mapview(sp_sf, zcol="species", alpha = 0)
 ```
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
+
+
 
 ## Justificación 
 
-Amplia distribución pero con poca información en Colombia, su amenaza principal en el Pacífico es la captura accidental en redes de pesca.
+Esta especie se considera de Preocupación Menor (LC) debido a su amplia distribución, aunque en Colombia se dispone de poca información sobre ella. En el Pacífico colombiano, ha sido afectada por enmallamientos accidentales en redes de pesca.
 
 
 

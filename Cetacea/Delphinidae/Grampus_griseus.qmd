@@ -105,6 +105,13 @@ mapview(sp_sf, zcol="species", alpha = 0)
 ```
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
+
+
 
 ## Justificación 
 

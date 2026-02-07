@@ -95,6 +95,13 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo("Mazama murelia")[1]`){target="_blank"}, `{r} get_biomodelo("Mazama murelia")[2]` 
+:::
+
+
 ## Justificación 
 
 Especie de amplia distribución en la Amazonía. Tiene amenazas como cacería y pérdida de hábitat. Presenta una seria incertidumbre taxonómica que no permite evaluarla y no hay certeza de la información para la especie. Es una sub especie de _Mazama nemorivaga_, antiguamente _Mazama gouazoubira murelia_.

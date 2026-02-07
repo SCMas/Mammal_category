@@ -47,8 +47,7 @@ value_box(
 
 ## Foto
 
-![_Tayassu_pecari_ en el Magdalema Medio. Colombia (Foto: Juan David Sánchez, Andres Link, Pearson McGovern, Julio Marin. 2025)](/img/sp/Tayassu_pecari.jpg)
- _Pecari_tajacu_.
+![_Tayassu_pecari_ en el Magdalema Medio. Colombia (Foto: Juan David Sánchez, Andres Link, Pearson McGovern, Julio Marin. 2025).](/img/sp/Tayassu_pecari.jpg)
 
 ## Mapa
 
@@ -65,7 +64,7 @@ library(sf)
 library(mapview)
 library(tidyverse)
 # Si únicamente descargará los datos de una especie ----
-species1 <- c("Tayassu_pecari")
+species1 <- c("Tayassu pecari")
 # Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
 gbif_data_sp1 <- occ_search(scientificName = species1, 
                             hasCoordinate = TRUE, 
@@ -95,6 +94,11 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ```
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
 
 
 ## Justificación 

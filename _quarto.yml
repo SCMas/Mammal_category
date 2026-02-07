@@ -1,6 +1,9 @@
 project:
   type: website
+#  pre-render: "C:/CodigoR/Mammal_category/R/handy_functions.R"
+#  notice the source is called from the file .Rprofile
   output-dir: docs
+
 
 website:
   google-analytics:

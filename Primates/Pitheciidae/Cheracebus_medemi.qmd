@@ -99,6 +99,15 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
+
+
+
+
 ## Justificación 
 
 Cheracebus medimi se evalúa como vulnerable ya que se sospecha que ha disminuido al menos un 30% en los últimos 25 años (tres generaciones) debido principalmente a la pérdida de hábitat en el sur de Colombia (principalmente por la creciente deforestación resultante de cultivos ilícitos y la extracción de madera) y por la caza para la subsistencia y los mercados locales. 

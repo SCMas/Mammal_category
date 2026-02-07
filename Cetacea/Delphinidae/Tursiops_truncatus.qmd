@@ -47,7 +47,7 @@ value_box(
 
 ## Foto
 
-![_Tursiops truncatus_      (Foto: Rafi Amar) ](https://inaturalist-open-data.s3.amazonaws.com/photos/211066160/medium.jpg)
+![_Tursiops truncatus_      (Foto: Isabel C. Avila) ](/img/sp/Tursiops_truncatus.jpg)
 
 ## Mapa
 
@@ -104,18 +104,22 @@ mapview(sp_sf, zcol="species", alpha = 0)
 
 ```
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
 
 
 ## Justificación 
 
-Esta especie está ampliamente distribuida. Suceptible a redes de pesca. 
-
+Esta especie se considera Casi Amenazada (NT) debido a que, aunque su distribución es amplia, en Colombia enfrenta diversas amenazas como la captura accidental en redes de pesca, el turismo, la degradación del hábitat, patógenos, el uso como carnada, y es vulnerable a la contaminación.
 
 
 ::: {layout="[[65,35]]"}
 ### Evaluadores:  
 
-José González-Maya, Cristian Cruz Rodríguez, Vladimir Rojas, Mauricio Vela.
+Isabel Cristina Avila, José González-Maya, Cristian Cruz Rodríguez, Vladimir Rojas, Mauricio Vela.
 
 
 :::

@@ -106,15 +106,23 @@ mapview(sp_sf, zcol="species", alpha = 0)
 No hay registros de la especie en GBIF para Colombia.
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo("Kogia breviceps")[1]`){target="_blank"}, `{r} get_biomodelo("Kogia breviceps")[2]` 
+:::
+
+
+
 ## Justificación 
 
-Esta especie se considera como Datos Insuficientes (DD) debido a que no hay datos ni información sobre su población, hábitats y ecología ni las amenazas que podrían estar afectándola.
+Esta especie se considera como Datos Insuficientes (DD) debido a la escasez de información sobre su población, sus hábitats y su ecología. En Colombia, ha sido afectada por enmallamientos accidentales en redes de pesca.
 
 
 ::: {layout="[[65,35]]"}
 ### Evaluadores:  
 
-Jaime Bolanos Jimenez, Diego F. Mojica-Moncada
+Jaime Bolaños-Jimenez, Diego F. Mojica-Moncada, Isabel C. Avila
 
 
 :::

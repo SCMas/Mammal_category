@@ -105,17 +105,24 @@ mapview(sp_sf, zcol="species", alpha = 0)
 ```
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
+
+
 
 ## Justificación 
 
-Especie de amplia distribución. Se adopta la misma categoria global.
+Esta especie se considera de Preocupación Menor (LC) debido a que es muy abundante y tiene una amplia distribución. En Colombia esta especie ha estado amenazada por la captura incidental en redes de pesca (e.g., red de cerco, trasmallo) y uso para carnada en el Pacífico.
 
 
 
 ::: {layout="[[65,35]]"}
 ### Evaluadores:  
 
-Federico Mosquera, Angela Paola Recalde
+Isabel Cristina Avila, Federico Mosquera, Angela Paola Recalde
 
 
 :::

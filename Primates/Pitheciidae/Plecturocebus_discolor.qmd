@@ -64,7 +64,7 @@ library(sf)
 library(mapview)
 library(tidyverse)
 # Si únicamente descargará los datos de una especie ----
-species1 <- c("Plecturocebus_discolor")
+species1 <- c("Plecturocebus discolor")
 # Descargar datos de ocurrencia de GBIF para esta especie; Este proceso puede tomar tiempo si existen muchos puntos!
 gbif_data_sp1 <- occ_search(scientificName = species1, 
                             hasCoordinate = TRUE, 
@@ -96,6 +96,13 @@ sp_sf <- st_as_sf(x = dat_sp1,
 mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 ```
+
+
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
 
 
 

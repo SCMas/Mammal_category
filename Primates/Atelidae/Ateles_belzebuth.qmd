@@ -98,6 +98,14 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
+
+
+
 ## Justificación 
 
 Se infiere una reducción poblacional de al menos el 50% con una ventana temporal de 45 años con 30 años en el pasado y 15 años al futuro, por pérdida de hábitat y cacería. Aunque presenta amplia distribución, su hábitat se ha reducido en extensión y calidad, pues coincide con grandes núcleos de deforestación en la Amazonia. El cambio en la categoría de riesgo de extinción no es genuino, respecto a la evaluación realizada en 2014, puesto que surge como resultado nueva información y conocimiento sobre la especie.

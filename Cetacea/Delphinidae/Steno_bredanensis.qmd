@@ -1,6 +1,6 @@
 ---
 title: "_Steno bredanensis_"
-subtitle: "Delfín de hocico estrecho"
+subtitle: "Delfín de dientes rugosos"
 date: 11/10/2025
 author: 
   - Dalia C. Barragán-Barrera
@@ -104,11 +104,17 @@ mapview(sp_sf, zcol="species", alpha = 0)
 
 ```
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
+
 
 
 ## Justificación 
 
-Esta especie está ampliamente distribuida. No hay amenazas significativas que puedan estar afectándola. Por lo tanto, se considera como Menor Preocupación (LC).
+Esta especie se considera de Preocupación Menor (LC) debido a que tiene una amplia distribución. En Colombia ha sido afectado por la captura accidental en redes de pesca.
 
 
 

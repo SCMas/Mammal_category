@@ -105,16 +105,22 @@ mapview(sp_sf, zcol="species", alpha = 0)
 ```
 
 
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
+
 
 ## Justificación 
 
-Suceptible a redes de arrastre y colisiones.
+Esta especie se considera Casi Amenazada (NT) debido a que, aunque presenta una distribución amplia, en ciertos sitios se ha documentado una disminución de sus subpoblaciones, como en el Caribe oriental. En Colombia, enfrenta diversas amenazas, incluyendo la captura incidental en redes de pesca y, potencialmente, el tráfico de embarcaciones, las prospecciones sísmicas (por el impacto del ruido) y la contaminación.
 
 
 ::: {layout="[[65,35]]"}
 ### Evaluadores:  
 
-Jaime Bolanos Jimenez, Diego F. Mojica-Moncada
+Jaime Bolaños-Jimenez, Diego F. Mojica-Moncada, Isabel C. Avila
 
 
 :::

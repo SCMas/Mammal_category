@@ -46,7 +46,7 @@ value_box(
 
 ## Foto
 
-![_Mazama rufina_ hembra en camara trampa en PNN Los Nevados, Colombia (Foto: D. Lizcano)](https://www.researchgate.net/profile/Carlos-A-Delgado-V/publication/237471132/figure/fig1/AS:669425489420302@1536614882531/Mazama-rufina-female-in-camera-trap-in-Los-Nevados-national-park-Colombia-Photo-D.png)
+![_Mazama rufina_ hembra en trampa cámara en PNN Los Nevados, Colombia (Foto: D. Lizcano)](https://www.researchgate.net/profile/Carlos-A-Delgado-V/publication/237471132/figure/fig1/AS:669425489420302@1536614882531/Mazama-rufina-female-in-camera-trap-in-Los-Nevados-national-park-Colombia-Photo-D.png)
 
 ## Mapa
 
@@ -94,6 +94,12 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 ```
 
 
+
+::: {.callout-note icon=false}
+## Ver Distribución 
+![BioModelo](/img/biomodelo_logo.png)
+[Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
+:::
 
 ## Justificación 
 
