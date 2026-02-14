@@ -82,7 +82,8 @@ dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
                                         #collectionCode,
                                         recordedBy
                                         ) |> 
-  filter(recordedBy!="NA") # remove this point
+  filter(recordedBy!="NA") |>  # remove this point
+  filter(recordedBy!="K. von Sneidern") 
 
 # definir CRS
 projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"

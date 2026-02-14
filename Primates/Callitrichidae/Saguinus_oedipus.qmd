@@ -99,7 +99,10 @@ dat_sp1 <- gbif_data_sp1$data |> select(scientificName,
   filter(recordedBy!="María Cristina Miranda Cardona") |> 
   filter(recordedBy!="Rick Collins") |> 
   filter(recordedBy!="Collector(s): Albert J. Beck") |> 
-  filter(recordedBy!="Gabriel Leite")
+  filter(recordedBy!="Gabriel Leite") |> 
+  filter(recordedBy!="CORANTIOQUIA") |> 
+  filter(recordedBy!="François-Jules Pictet")
+  
 
 # definir CRS
 projlatlon <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
@@ -109,7 +112,7 @@ sp_sf <- st_as_sf(x = dat_sp1,
                                     "decimalLatitude"),
                             crs = projlatlon)
 
-sp_in_col <- unlist(st_intersects(munimapcol, sp_sf))
+sp_in_col <- unlist(st_intersects(munimapcol, sp_sf)) #remove in ocean
 
 mapview(sp_sf[sp_in_col,], zcol="acceptedScientificName", alpha = 0)
 
@@ -118,7 +121,7 @@ mapview(sp_sf[sp_in_col,], zcol="acceptedScientificName", alpha = 0)
 
 ::: {.callout-note icon=false}
 ## Ver Distribución 
-![BioModelo](img/biomodelo_logo.png)
+![BioModelo](/img/biomodelo_logo.png)
 [Biomodelo](`{r} get_biomodelo(species1)[1]`){target="_blank"}, `{r} get_biomodelo(species1)[2]` 
 :::
 

@@ -102,7 +102,7 @@ No hay registros de GBIF en Colombia.
 
 ::: {.callout-note icon=false}
 ## Ver Distribución 
-![BioModelo](img/biomodelo_logo.png)
+![BioModelo](/img/biomodelo_logo.png)
 [Biomodelo](`{r} get_biomodelo("Callimico goeldii")[1]`){target="_blank"}, `{r} get_biomodelo("Callimico goeldii")[2]` 
 :::
 

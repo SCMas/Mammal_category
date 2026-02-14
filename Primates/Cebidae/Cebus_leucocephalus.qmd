@@ -101,7 +101,7 @@ No hay datos de la especie en GBIF
 
 ::: {.callout-note icon=false}
 ## Ver Distribución 
-![BioModelo](img/biomodelo_logo.png)
+![BioModelo](/img/biomodelo_logo.png)
 [Biomodelo](`{r} get_biomodelo("Cebus leucocephalus")[1]`){target="_blank"}, `{r} get_biomodelo("Cebus leucocephalus")[2]` 
 :::
 

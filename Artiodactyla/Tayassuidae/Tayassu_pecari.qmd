@@ -107,6 +107,8 @@ mapview(sp_sf, zcol="acceptedScientificName", alpha = 0)
 Se estima que la especie ha reducido su población en los últimos 18 años (3 generaciones) en un 50%. Con base en las investigaciones realizadas, en los últimos 10 años no se reporta en el Caribe, Antioquia y Valle del Magdalena Medio y Alto, y se infiere que en su área de distribución se presenta una reducción en calidad y cantidad de hábitat. Adicionalmente, se reconoce como amenaza para la especie el conflicto con la especie exótica _Sus scrofa_ (cerdos ferales), los cuales están generando desplazamiento de sus poblaciones en la Orinoquía; así como la cacería para consumo, tráfico como mascota, ampliación de la frontera agrícola y el envenenamiento.
 
 
+En este estudio @Sanchez-L2025 describen nuevos registros de distribución.
+
 
 
 ## Evaluadores:
@@ -115,7 +117,6 @@ Javier Colmenares, Laura Vargas, Miguel Rodríguez, Jairo Peréz Torres, Felipe 
 
 
 
-En este estudio @Sanchez-L2025 describen nuevos registros de distribución.
 
 
 ## Bibliografía citada

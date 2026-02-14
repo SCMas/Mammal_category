@@ -47,7 +47,7 @@ value_box(
 
 ## Foto
 
-![_Inia geoffrensis_      Meta Colombia, Colombia (Foto: Fernando Trujillo) ](img/sp/Inia_geoffrensis.jpg)
+![_Inia geoffrensis_      Meta Colombia, Colombia (Foto: Fernando Trujillo) ](/img/sp/Inia_geoffrensis.jpg)
 
 ## Mapa
 
