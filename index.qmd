@@ -10,7 +10,7 @@ La evaluación de riesgo de extinción de los mamíferos de Colombia se realizó
 
 
 
-![](/img/trilogos.png)
+![](/img/trilogos_v2.png)
 
 ## Mas Detalles
 
@@ -20,7 +20,7 @@ El proceso contó con la participacion de **5 facilitadores** y  **202 expertos*
 
 ### Equipo coordinador:
 
-Bibiana Gómez-Valencia, Alejandra Niño-Reyes, Elkin Noguera, Lina M. Garcia L., Angélica Díaz-Pulido, Cristian Cruz, Laura J. Novoa, Maria Piedad Baptiste, Diego R. Gutierrez, Felipe Suarez-Castro, Carlos Jair Muñoz, Héctor Ramirez-Chaves, Jose F. Gonzales-Maya, Maria Torres, Diego J. Lizcano, Luis Hdo. Romero. 
+Bibiana Gómez-Valencia, Alejandra Niño-Reyes, Elkin Noguera, Lina M. Garcia L., Angélica Díaz-Pulido, Cristian Cruz, Laura J. Novoa, Maria Piedad Baptiste, Diego R. Gutierrez, Felipe Suarez-Castro, Carlos Jair Muñoz, Héctor Ramirez-Chaves, Jose F. Gonzales-Maya, Maria Torres, Luis Hdo. Romero, Diego J. Lizcano.  
 
 ### Facilitadores
 
@@ -240,11 +240,17 @@ Yuly García-Cedeño.
 ## Conozca mas detalles sobre el proceso en esta publicación:  
 
 
-Gómez-Valencia, Bibiana, Maria P. Baptiste, Hector E. Ramírez-Chaves, Elkin A. Noguera-Urbano, Andres Felipe Suarez-Castro, María M. Torres-Martínez, Gabriel Pantoja-Peña, y Diego J. Lizcano. 2021. Avance Del Proceso De evaluación De Riesgo De extinción De Los mamíferos En Colombia. Mammalogy Notes 7 (2), 335. [doi:10.47603/mano.v7n2.335](https://doi.org/10.47603/mano.v7n2.335)<span class="__dimensions_badge_embed__" data-doi="10.47603/mano.v7n2.335" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.47603/mano.v7n2.335" data-hide-no-mentions="true" class="altmetric-embed"></div>      
+Gómez-Valencia, Bibiana, Maria P. Baptiste, Hector E. Ramírez-Chaves, Elkin A. Noguera-Urbano, Andres Felipe Suarez-Castro, María M. Torres-Martínez, Gabriel Pantoja-Peña, y Diego J. Lizcano. 2021. Avance Del Proceso De evaluación De Riesgo De extinción De Los mamíferos En Colombia. Mammalogy Notes 7 (2), 335. [doi:10.47603/mano.v7n2.335](https://doi.org/10.47603/mano.v7n2.335)<span class="__dimensions_badge_embed__" data-doi="10.47603/mano.v7n2.335" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.47603/mano.v7n2.335" data-hide-no-mentions="true" class="altmetric-embed"></div>   
+
 :::
 
 
 
+:::{.callout-caution collapse="true"}
+### Descargo de responsabilidad
 
+Las categorías de amenaza presentadas en este sitio corresponden a evaluaciones realizadas por expertos en el marco del proceso de actualización de la Lista Roja de mamíferos de Colombia 2021–2022. Sin embargo, pueden presentarse diferencias frente a otras fuentes oficiales, debido a los tiempos y procesos de evaluación, revisión y adopción formal de las categorías, particularmente en el caso de especies endémicas cuyas evaluaciones aún no han sido incorporadas en listados globales o en instrumentos normativos. Algunas fuentes oficiales que pueden presentar discrepancias incluyen la Resolución 0126 de 2024 del Ministerio de Ambiente y Desarrollo Sostenible. La información presentada busca resaltar el trabajo colaborativo de evaluación por expertos y refleja el mejor conocimiento científico disponible al momento de la evaluación.
+
+:::
 
 

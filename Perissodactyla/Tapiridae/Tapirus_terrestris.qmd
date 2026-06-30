@@ -47,7 +47,7 @@ value_box(
 
 ## Foto
 
-![_Tapirus terrestris_ Danta en Manacacias, Meta, Colombia (Foto: Diego J. Lizcano](/img/sp/Tapirus_terrestris.jpg)
+![_Tapirus terrestris_ Danta en Manacacias, Meta, Colombia (Foto: Diego J. Lizcano)](/img/sp/Tapirus_terrestris.jpg)
 
 ## Mapa
 

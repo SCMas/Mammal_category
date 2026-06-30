@@ -17,7 +17,7 @@ website:
     site-name: "Categorización de los mamíferos de Colombia"
   title: "Categorización de los mamíferos de Colombia"
   site-url: "https://mamiferoscolombia.org/categorias"
-  repo-url: https://github.com/dlizcano/mammalcol
+  repo-url: https://github.com/SCMas/Mammal_category
   repo-actions: [issue]
   sidebar:  
     search: true
@@ -42,7 +42,7 @@ website:
       - icon: twitter
         href: https://x.com/SCMas2
       - icon: github
-        href: https://github.com/dlizcano/Mammal_category
+        href: https://github.com/SCMas/Mammal_category
 
  
  
@@ -57,7 +57,7 @@ website:
 
 execute:
   echo: false
-  freeze: auto
+  freeze: true
   
   
 format:
